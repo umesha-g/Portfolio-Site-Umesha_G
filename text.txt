@@ -1,0 +1,32 @@
+@font-face {
+  font-family: "advent_regular";
+  src: url(/public/fonts/advent_pro/AdventPro-Regular.ttf);
+}
+
+@font-face {
+  font-family: "advent_medium";
+  src: url(/public/fonts/advent_pro/AdventPro-Medium.ttf);
+}
+
+@font-face {
+  font-family: "advent_light";
+  src: url(/public/fonts/advent_pro/AdventPro-Light.ttf);
+}
+
+ backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-conic":
+          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      },
+      
+
+      @font-face {
+  font-family: 'Genos';
+  src: url('https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&display=swap');
+  font-style: medium;
+  font-weight: normal;
+  font-display: swap;
+}
+
+
+<li><a className="bg-amber-600 m-4 text-white px-4 py-2 rounded" href="#" >Resume</a></li>

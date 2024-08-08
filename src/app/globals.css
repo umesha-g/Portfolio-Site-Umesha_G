@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@font-face {
+  font-family: "advent_bold";
+  src: url('./UI/fonts/advent/AdventPro-Bold.ttf');
+}
+
+@font-face {
+  font-family: "advent_thin";
+  src: url('./UI/fonts/advent/AdventPro-Light.ttf');
+}
+
+
+@font-face {
+  font-family: "genos";
+  src: url('./UI/fonts/genos/Genos-Bold.ttf');
+}
+
+html {
+  scroll-behavior: smooth;
+}
