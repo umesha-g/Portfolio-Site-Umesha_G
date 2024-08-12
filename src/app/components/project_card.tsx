@@ -30,7 +30,7 @@ const ProjectCard: React.FC<Project> = ({ title, description, projectUrl, github
   }, [controls]); 
 
   return (
-    <motion.div className="max-w-sm rounded overflow-hidden shadow-lg bg-slate-900" ref={ref} initial={{ opacity: 0, y: 50 }} animate={controls} transition={{ duration: 0.6, ease: 'easeOut' }} whileHover={{ scale: 1.05 }}>
+    <motion.div className="max-w-sm rounded-lg overflow-hidden shadow-lg bg-slate-900" ref={ref} initial={{ opacity: 0, y: 50 }} animate={controls} transition={{ duration: 0.6, ease: 'easeOut' }} whileHover={{ scale: 1.05 }}>
         
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2 text-amber-600">{title}</div>

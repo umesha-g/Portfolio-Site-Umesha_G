@@ -28,7 +28,7 @@ export default function Home() {
         <Serv_Section/>
       </section>
 
-      <section id="projects_sc" className='min-h-screen bg-gray-100'>
+      <section id="projects_sc" className='min-h-screen items-center bg-gray-100'>
         <Project_Section/>
       </section>
 
