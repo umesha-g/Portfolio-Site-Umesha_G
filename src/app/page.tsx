@@ -4,7 +4,7 @@ import Navbar from '../app/components/navbar';
 import Hero from '../app/components/hero';
 import GoToTopButton from '../app/components/go_to_top_button';
 import Serv_Section from '../app/components/serv_section';
-import About_Section from '../app/components/about_section_3';
+import About_Section from './components/about_section';
 import Link from 'next/link';
 import Project_Section from './components/proj_sec';
 
