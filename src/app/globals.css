@@ -2,14 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
 }
-
 
 @layer utilities {
   .text-balance {
@@ -33,6 +30,23 @@
   src: url('./UI/fonts/genos/Genos-Bold.ttf');
 }
 
-html {
-  scroll-behavior: smooth;
+@font-face {
+  font-family: "Merriweather-Bold";
+  src: url('./UI/fonts/merriw/Merriweather-Bold.ttf');
 }
+
+@font-face {
+  font-family: "Jost";
+  src: url('./UI/fonts/Jost-Medium.ttf');
+}
+
+@font-face {
+  font-family: "italianno";
+  src: url('./UI/fonts/Italianno-Regular.ttf');
+}
+
+@font-face {
+  font-family: "backto";
+  src: url('./UI/fonts/Back\ to\ Black\ Demo.ttf');
+}
+

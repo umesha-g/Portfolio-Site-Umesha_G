@@ -1,4 +1,4 @@
-import { Genos } from "next/font/google";
+import { Genos, Merriweather } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -13,6 +13,10 @@ const config: Config = {
         adventbold: ['advent_bold'],
         adventthin: ['advent_thin'],
         genos: ['genos'],
+        Merriweather:['Merriweather-Bold'],
+        jost:['Jost'],
+        italianno:['italianno'],
+        backto:['backto']
       },
     },
 
