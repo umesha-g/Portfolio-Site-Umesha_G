@@ -6,6 +6,7 @@ export default function Project_Section() {
 
     return (
 
+      <div className='wrap relative border-2 rounded-lg p-10'>
         <div className="lg:py-28 py-20">
         <h2 className="lg:text-4xl text-3xl font-bold mb-8 text-center">My Projects</h2>
           <div className="container mx-auto px-10 py-10">
@@ -16,6 +17,6 @@ export default function Project_Section() {
             </div>
           </div>
         </div>
-
+      </div>
     );
 }

@@ -4,7 +4,7 @@ import Navbar from '../app/components/navbar';
 import Hero from '../app/components/hero';
 import GoToTopButton from '../app/components/go_to_top_button';
 import Serv_Section from '../app/components/serv_section';
-import About_Section from '../app/components/about_section';
+import About_Section from '../app/components/about_section_3';
 import Link from 'next/link';
 import Project_Section from './components/proj_sec';
 
@@ -34,7 +34,7 @@ export default function Home() {
 
       <section id="contact_sc" className='h-96 bg-slate-900'>
         <div className='flex flex-col h-96'>
-          <div className='flex-1 lg:py-20 py-10'>
+          <div className='flex-1 lg:py-10 py-5'>
             <h3 className='lg:text-4xl text-3xl font-bold mb-8 text-center text-white'>Contact Me</h3>
           </div>
           <div className='bg-slate-950  text-white text-center  w-full p-4 2xl:p-8' >

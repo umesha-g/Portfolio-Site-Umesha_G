@@ -45,3 +45,11 @@
     html {
   scroll-behavior: smooth;
 }
+
+<motion.div
+      ref={ref}
+      initial={{ opacity: 0, y: 50 }}
+      animate={controls}
+      transition={{ duration: 0.6, ease: 'easeOut' }}
+      className="bg-white p-4 rounded-lg shadow-md"
+    >

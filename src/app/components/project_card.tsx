@@ -1,11 +1,36 @@
-import React from 'react';
-import { motion } from 'framer-motion';
+import React,{ useState, useEffect, useRef } from 'react';
 import { ExternalLink, Github } from 'lucide-react';
 import { Project } from '../data/projects/projects_list';
+import { motion, useAnimation } from 'framer-motion';
+ 
 
 const ProjectCard: React.FC<Project> = ({ title, description, projectUrl, githubUrl }) => {
+  const controls = useAnimation();
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          controls.start({ opacity: 1, y: 0 });
+        } else {
+          controls.set({ opacity: 0, y: -50 });
+        }
+      },
+      { threshold: 0.2 }
+    );
+  
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+  
+    return () => {
+      observer.disconnect();
+    };
+  }, [controls]); 
+
   return (
-    <motion.div className="max-w-sm rounded overflow-hidden shadow-lg bg-slate-900" initial={{ opacity: 0, y: 50 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} whileHover={{ scale: 1.05 }}>
+    <motion.div className="max-w-sm rounded overflow-hidden shadow-lg bg-slate-900" ref={ref} initial={{ opacity: 0, y: 50 }} animate={controls} transition={{ duration: 0.6, ease: 'easeOut' }} whileHover={{ scale: 1.05 }}>
         
       <div className="px-6 py-4">
         <div className="font-bold text-xl mb-2 text-amber-600">{title}</div>
