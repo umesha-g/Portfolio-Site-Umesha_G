@@ -1,15 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { BsArrowRight } from 'react-icons/bs';
+import heroImage from '@/app/UI/Images/hero/hero.png';
+import Image from 'next/image';
 
-interface TimelineItemProps {
-  year: string;
-  title: string;
-  description: string;
-}
 
-const TimelineItem: React.FC<TimelineItemProps> = ({ year, title, description }) => {
-  const controls = useAnimation();
+const HeroImage: React.FC = () => {
+    const controls = useAnimation();
     const ref = useRef<HTMLDivElement>(null);
     const [hasAnimated, setHasAnimated] = useState(false);
 
@@ -31,20 +28,16 @@ const TimelineItem: React.FC<TimelineItemProps> = ({ year, title, description })
         return () => {
             observer.disconnect();
         };
-    }, [controls, hasAnimated]); 
-    
-  return (
+    }, [controls, hasAnimated]);  
+ 
+
+    return (
     <motion.div ref={ref} initial={{ opacity: 0, x: -50 }} animate={controls} transition={{ duration: 0.6, ease: 'easeOut' }} className="flex items-center">
-      <div className="z-10 lg:mx-20 mx-3 flex items-center order-1 bg-amber-600 shadow-xl w-20 h-10 rounded-2xl">
-        <h1 className="mx-auto font-semibold text-lg text-white">{year}</h1>
-      </div>
-      <BsArrowRight size={40} className="order-2" />
-      <div className="order-3 mx-3 my-5 lg:mx-10 bg-white  border-2 rounded-lg shadow-lg w-8/12 px-6 py-4">
-        <h3 className="mb-3 font-bold text-gray-800 text-xl">{title}</h3>
-        <p className="text-sm leading-snug tracking-wide text-gray-900 text-opacity-100">{description}</p>
-      </div>
+        <div className=' overflow-hidden'>
+            <Image className=' mt-22  ' alt="" height='900' width='900' src={heroImage}/>
+          </div>
     </motion.div>
-  );
+    );
 };
 
-export default TimelineItem;
+export default HeroImage;

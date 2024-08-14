@@ -7,15 +7,16 @@ import { motion, useAnimation } from 'framer-motion';
 const ProjectCard: React.FC<Project> = ({ title, description, projectUrl, githubUrl }) => {
   const controls = useAnimation();
   const ref = useRef<HTMLDivElement>(null);
+  const [hasAnimated, setHasAnimated] = useState(false);
+
 
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) {
+        if (entry.isIntersecting && !hasAnimated) {
           controls.start({ opacity: 1, y: 0 });
-        } else {
-          controls.set({ opacity: 0, y: -50 });
-        }
+          setHasAnimated(true);
+        } 
       },
       { threshold: 0.2 }
     );
@@ -27,7 +28,7 @@ const ProjectCard: React.FC<Project> = ({ title, description, projectUrl, github
     return () => {
       observer.disconnect();
     };
-  }, [controls]); 
+  }, [controls,hasAnimated]); 
 
   return (
     <motion.div className="max-w-sm rounded-lg overflow-hidden shadow-lg bg-slate-900" ref={ref} initial={{ opacity: 0, y: 50 }} animate={controls} transition={{ duration: 0.6, ease: 'easeOut' }} whileHover={{ scale: 1.05 }}>

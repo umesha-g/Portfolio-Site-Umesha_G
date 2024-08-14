@@ -9,17 +9,16 @@ interface SkillCardProps {
   const SkillCard: React.FC<SkillCardProps> = ({ skill, level }) => {
     const controls = useAnimation();
     const ref = useRef<HTMLDivElement>(null);
+    const [hasAnimated, setHasAnimated] = useState(false);
   
     useEffect(() => {
       const observer = new IntersectionObserver(
         ([entry]) => {
-          if (entry.isIntersecting) {
+            if (entry.isIntersecting && !hasAnimated) {
             controls.start({
               width: `${level}%`,
               transition: { duration: 1.5, ease: "easeInOut" }
-            });
-          } else {
-            controls.set({ width: '0%' });
+            });setHasAnimated(true);
           }
         },
         { threshold: 0.2 }
@@ -32,7 +31,7 @@ interface SkillCardProps {
       return () => {
         observer.disconnect();
       };
-    }, [controls, level]); 
+    }, [controls, level ,hasAnimated]); 
   
     return (
       <div className="bg-white p-4 rounded-lg shadow-md">

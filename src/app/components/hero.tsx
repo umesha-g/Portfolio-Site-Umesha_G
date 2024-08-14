@@ -3,6 +3,7 @@ import { AiFillGithub, AiFillLinkedin, } from 'react-icons/ai';
 import { TbBrandFiverr } from 'react-icons/tb';
 import Image from 'next/image';
 import heroImage from '@/app/UI/Images/hero/hero.png';
+import HeroImage from './hero_image';
 
 export default function Hero() {
 
@@ -33,7 +34,7 @@ export default function Hero() {
           </div>
 
           <div className=' overflow-hidden'>
-            <Image className=' mt-22  ' alt="" height='900' width='900' src={heroImage}/>
+            <HeroImage/>
           </div>
 
         </div>
