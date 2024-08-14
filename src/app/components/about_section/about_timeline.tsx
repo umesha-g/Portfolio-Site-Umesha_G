@@ -1,14 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { BsArrowRight } from 'react-icons/bs';
+import { TimeEvents } from '../../data/about_section_data/time_line_data';
 
-interface TimelineItemProps {
-  year: string;
-  title: string;
-  description: string;
-}
-
-const TimelineItem: React.FC<TimelineItemProps> = ({ year, title, description }) => {
+const TimelineItem: React.FC<TimeEvents> = ({ year, title, description }) => {
   const controls = useAnimation();
     const ref = useRef<HTMLDivElement>(null);
     const [hasAnimated, setHasAnimated] = useState(false);

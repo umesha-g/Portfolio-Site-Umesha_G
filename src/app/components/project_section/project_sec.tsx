@@ -1,5 +1,5 @@
-import ProjectCard from '../components/project_card';
-import { Project, projects_list} from '../data/projects/projects_list';
+import ProjectCard from '../project_section/project_card';
+import { Project, projects_list} from '../../data/projects/projects_list';
 import React from 'react';
 
 export default function Project_Section() {

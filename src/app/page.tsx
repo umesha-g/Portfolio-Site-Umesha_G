@@ -1,12 +1,12 @@
 'use client';
 import React from 'react';
-import Navbar from '../app/components/navbar';
-import Hero from '../app/components/hero';
+import Navbar from './components/hero_section/navbar';
+import Hero from './components/hero_section/hero';
 import GoToTopButton from '../app/components/go_to_top_button';
-import Serv_Section from '../app/components/serv_section';
-import About_Section from './components/about_section';
-import Link from 'next/link';
-import Project_Section from './components/proj_sec';
+import Service_Section from './components/service_section/service_section';
+import About_Section from './components/about_section/about_section';
+import Project_Section from './components/project_section/project_sec';
+import Contact_Section from './components/contact_section/contact_section';
 
 
 export default function Home() {
@@ -25,7 +25,7 @@ export default function Home() {
       </section>
 
       <section id="services_sc" className='min-h-screen bg-amber-600'>
-        <Serv_Section/>
+        <Service_Section/>
       </section>
 
       <section id="projects_sc" className='min-h-screen items-center bg-gray-100'>
@@ -33,16 +33,9 @@ export default function Home() {
       </section>
 
       <section id="contact_sc" className='h-96 bg-slate-900'>
-        <div className='flex flex-col h-96'>
-          <div className='flex-1 lg:py-10 py-5'>
-            <h3 className='lg:text-4xl text-3xl font-bold mb-8 text-center text-white'>Contact Me</h3>
-          </div>
-          <div className='bg-slate-950  text-white text-center  w-full p-4 2xl:p-8' >
-            <p >Designed By Umesha G. 2024 ©</p>
-          </div>
-        </div>
+        <Contact_Section/>
       </section>
-      
+  
     </main>
   );
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default function Serv_Section() {
+export default function Service_Section() {
 
     return (
         <div className='lg:py-28 py-20'>

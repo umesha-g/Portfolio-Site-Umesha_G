@@ -1,12 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, useAnimation } from 'framer-motion';
+import { LinearSkill } from '../../data/about_section_data/linear_skill_list';
 
-interface SkillCardProps {
-    skill: string;
-    level: number;
-  }
-  
-  const SkillCard: React.FC<SkillCardProps> = ({ skill, level }) => {
+  const SkillCard: React.FC<LinearSkill> = ({ name, Level }) => {
     const controls = useAnimation();
     const ref = useRef<HTMLDivElement>(null);
     const [hasAnimated, setHasAnimated] = useState(false);
@@ -16,7 +12,7 @@ interface SkillCardProps {
         ([entry]) => {
             if (entry.isIntersecting && !hasAnimated) {
             controls.start({
-              width: `${level}%`,
+              width: `${Level}%`,
               transition: { duration: 1.5, ease: "easeInOut" }
             });setHasAnimated(true);
           }
@@ -31,11 +27,11 @@ interface SkillCardProps {
       return () => {
         observer.disconnect();
       };
-    }, [controls, level ,hasAnimated]); 
+    }, [controls, Level ,hasAnimated]); 
   
     return (
       <div className="bg-white p-4 rounded-lg shadow-md">
-        <h3 className="text-lg font-semibold mb-2">{skill}</h3>
+        <h3 className="text-lg font-semibold mb-2">{name}</h3>
         <div ref={ref} className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-slate-900">
           <motion.div className="bg-amber-600 h-2.5 rounded-full" initial={{ width: '0%' }} animate={controls}/>
         </div>

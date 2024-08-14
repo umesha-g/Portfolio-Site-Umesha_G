@@ -1,6 +1,6 @@
 import React,{ useState, useEffect, useRef } from 'react';
 import { ExternalLink, Github } from 'lucide-react';
-import { Project } from '../data/projects/projects_list';
+import { Project } from '../../data/projects/projects_list';
 import { motion, useAnimation } from 'framer-motion';
  
 

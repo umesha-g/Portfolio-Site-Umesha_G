@@ -1,5 +1,5 @@
 import React from 'react';
-import ProjectCard from '../app/components/project_card';
+import ProjectCard from '../app/components/project_section/project_card';
 import { Project, projects_list} from '../app/data/projects/projects_list';
 
 const ProjectsPage: React.FC = () => {
