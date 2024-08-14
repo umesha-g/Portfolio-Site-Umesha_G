@@ -7,7 +7,7 @@ export interface CircularSkill {
 export const circular_skill_list:CircularSkill[] = [
 
     {
-        name: 'Java414241Script',
+        name: 'Java4142',
         percentage: 80 ,
     },
 
@@ -22,7 +22,7 @@ export const circular_skill_list:CircularSkill[] = [
     },
 
     {
-        name: 'Java414241Script',
+        name: 'Java41424',
         percentage: 80 ,
     },
 ]

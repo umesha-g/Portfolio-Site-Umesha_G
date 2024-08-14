@@ -91,27 +91,27 @@ const SwipeableDiv: React.FC<SwipeableDivProps> = ({ skills_list }) => {
         {skills_list.map((skill, index) => (
           <motion.div
             key={index}
-            className="flex-shrink-0 w-full bg-white p-6 rounded-lg shadow-md"
+            className="flex-shrink-0 w-full bg-thatch-green-500 p-6 rounded-lg shadow-md"
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -20 }}
             transition={{ duration: 0.3 }}
           >
             <div className='lg:mx-20 ' >
-            <h4 className="text-xl font-semibold mb-2">{skill.name}</h4>
-            <p className="mb-4">{skill.description}</p>
+            <h4 className="text-xl text-white font-semibold mb-2">{skill.name}</h4>
+            <p className="mb-4  text-white ">{skill.description}</p>
             </div>
           </motion.div>
         ))}
       </div>
       <button
-        className="absolute left-5 top-1/2 transform -translate-y-1/2 p-2 lg:block hidden text-slate-900 rounded-full"
+        className="absolute left-5 top-1/2 transform -translate-y-1/2 p-2 lg:block hidden text-white rounded-full"
         onClick={() => setCurrentSkill((prev) => Math.max(prev - 1, 0))}
       >
         <MdKeyboardArrowLeft size={24} />
       </button>
       <button
-        className="absolute right-5 top-1/2 transform -translate-y-1/2 p-2 lg:block hidden text-slate-900 rounded-full"
+        className="absolute right-5 top-1/2 transform -translate-y-1/2 p-2 lg:block hidden text-white rounded-full"
         onClick={() => setCurrentSkill((prev) => Math.min(prev + 1, skills_list.length - 1))}
       >
         <MdOutlineKeyboardArrowRight size={24} />
@@ -121,7 +121,7 @@ const SwipeableDiv: React.FC<SwipeableDivProps> = ({ skills_list }) => {
           <button
             key={index}
             onClick={() => setCurrentSkill(index)}
-            className={`w-3 h-3 rounded-full ${index === currentSkill ? 'bg-amber-600' : 'bg-gray-300'}`}
+            className={`w-3 h-3 rounded-full ${index === currentSkill ? 'bg-ebony-950' : 'bg-gray-300'}`}
           />
         ))}
       </div>

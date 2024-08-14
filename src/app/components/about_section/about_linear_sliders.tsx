@@ -4,6 +4,7 @@ import { LinearSkill } from '../../data/about_section_data/linear_skill_list';
 
   const SkillCard: React.FC<LinearSkill> = ({ name, Level }) => {
     const controls = useAnimation();
+    const controls_2 = useAnimation();
     const ref = useRef<HTMLDivElement>(null);
     const [hasAnimated, setHasAnimated] = useState(false);
   
@@ -14,6 +15,10 @@ import { LinearSkill } from '../../data/about_section_data/linear_skill_list';
             controls.start({
               width: `${Level}%`,
               transition: { duration: 1.5, ease: "easeInOut" }
+            });
+            controls_2.start({
+              opacity: 1, x: 0 ,
+              transition: { duration: 0.5, ease: "easeInOut" }
             });setHasAnimated(true);
           }
         },
@@ -27,13 +32,13 @@ import { LinearSkill } from '../../data/about_section_data/linear_skill_list';
       return () => {
         observer.disconnect();
       };
-    }, [controls, Level ,hasAnimated]); 
+    }, [controls,controls_2, Level ,hasAnimated]); 
   
     return (
-      <div className="bg-white p-4 rounded-lg shadow-md">
-        <h3 className="text-lg font-semibold mb-2">{name}</h3>
-        <div ref={ref} className="w-full bg-gray-200 rounded-full h-2.5 dark:bg-slate-900">
-          <motion.div className="bg-amber-600 h-2.5 rounded-full" initial={{ width: '0%' }} animate={controls}/>
+      <div className=" p-4 rounded-lg ">
+        <motion.h3 initial={{ opacity: 0, x: -10 }} animate={controls_2} className="text-lg font-semibold ml-1 mb-2">{name}</motion.h3>
+        <div ref={ref} className="w-full bg-white rounded-full h-2.5">
+          <motion.div className="bg-thatch-green-500 h-2.5 rounded-full" initial={{ width: '0%' }} animate={controls}/>
         </div>
       </div>
     );
