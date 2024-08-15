@@ -1,7 +1,6 @@
 import Link from 'next/link';
 import React,{ useEffect, useRef, useState } from 'react';
 import { HiMenu, HiX } from 'react-icons/hi';
-import styles from '@/app/Layout.module.css';
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -39,7 +38,7 @@ export default function Navbar() {
         <a onClick={toggleMenu_sectionScroll}> <HiMenu size={30} className="sm:hidden items-center text-3xl mr-2 text-thatch-green-500" /></a>
         
 
-        <div className={`sm:flex ${isMenuOpen ? 'block' : 'hidden'} ${styles.navbar}  2xl:text-lg justify-end absolute top-0 sm:static left-0 w-full bg-ebony-950 `}>
+        <div className={`sm:flex ${isMenuOpen ? 'block' : 'hidden'}  2xl:text-lg justify-end absolute top-0 sm:static left-0 w-full bg-ebony-950 `}>
           <ul className="flex  flex-col sm:mr-24 sm:flex-row min-h-screen sm:min-h-0 items-center justify-center h-full text-white  bg-ebony-950 ">
             <li className='my-10  sm:my-0'><a id='about_bt' section-id="about_sc" className="hover:text-thatch-green-500 2xl:px-8 sm:px-6 text-2xl sm:text-base 2xl:text-lg transition-colors duration-300 cursor-pointer" onClick={toggleMenu_sectionScroll}>ABOUT</a></li>
             <li className='my-10  sm:my-0'><a id='service_bt' section-id="services_sc" className="hover:text-thatch-green-500 2xl:px-8 sm:px-6 text-2xl sm:text-base 2xl:text-lg transition-colors duration-300 cursor-pointer" onClick={toggleMenu_sectionScroll}>SERVICES</a></li>

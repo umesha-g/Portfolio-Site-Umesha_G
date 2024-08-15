@@ -2,14 +2,22 @@
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  background-image: url('./data/background_pattern.svg');
+  background-image: url('./data/background_pattern_mobile.svg');
   background-repeat: repeat-y;
   background-size: 100% auto;
   background-position: center top;
 }
 
-.navbar{
-  background-image: url('./data/background_pattern.svg');
-  background-size:  500%;
-}
+@media screen and (min-width: 1500px) {
 
+  .container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-image: url('./data/background_pattern_desktop.svg');
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+    background-position: center top;
+  }
+  
+}

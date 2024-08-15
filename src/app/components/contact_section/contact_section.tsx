@@ -4,7 +4,7 @@ export default function Contact_Section(): JSX.Element {
     return (
         <div className='flex flex-col h-96'>
             <div className='flex-1 lg:py-10 py-5'>
-                <h3 className='lg:text-4xl text-3xl font-bold mb-8 text-center text-white'>Contact Me</h3>
+                <h3 className='lg:text-4xl text-3xl font-bold mb-8 text-center text-thatch-green-500'>Contact Me</h3>
             </div>
             <div>
                 <footer className=" rounded-lg shadow  m-4">

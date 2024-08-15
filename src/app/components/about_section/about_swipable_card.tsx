@@ -1,5 +1,5 @@
 import React, { useState, useRef, useCallback, useEffect } from 'react';
-import { motion } from 'framer-motion';
+import { motion,useAnimation } from 'framer-motion';
 import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 import { MdKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from 'react-icons/md';
 
@@ -18,6 +18,9 @@ const SwipeableDiv: React.FC<SwipeableDivProps> = ({ skills_list }) => {
   const [startX, setStartX] = useState(0);
   const [offsetX, setOffsetX] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
+  const ref = useRef<HTMLDivElement>(null);
+  const controls = useAnimation();
+  const [hasAnimated, setHasAnimated] = useState(false);
 
   const handleMouseDown = useCallback((e: React.MouseEvent) => {
     setIsDragging(true);
@@ -77,8 +80,30 @@ const SwipeableDiv: React.FC<SwipeableDivProps> = ({ skills_list }) => {
     };
   }, [handleMouseMove, handleMouseUp]);
 
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+          if (entry.isIntersecting && !hasAnimated) {
+          controls.start({
+            opacity: 1, x: 0 ,
+            transition: { duration: 0.5, ease: "easeInOut" ,delay:0.2 }
+          });setHasAnimated(true);
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    if (ref.current) {
+      observer.observe(ref.current);
+    }
+
+    return () => {
+      observer.disconnect();
+    };
+  }, [controls ,hasAnimated]); 
+
   return (
-    <div className="relative rounded-lg overflow-hidden shadow-md">
+    <motion.div animate={controls} ref={ref} initial={{ opacity: 0, x: 50 }} className="relative rounded-lg overflow-hidden shadow-md">
       <div
         ref={containerRef}
         className="flex transition-transform duration-300 ease-in-out"
@@ -125,7 +150,7 @@ const SwipeableDiv: React.FC<SwipeableDivProps> = ({ skills_list }) => {
           />
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 };
 

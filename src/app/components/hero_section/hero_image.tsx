@@ -14,7 +14,10 @@ const HeroImage: React.FC = () => {
         const observer = new IntersectionObserver(
             ([entry]) => {
                 if (entry.isIntersecting && !hasAnimated) {
-                    controls.start({ opacity: 1, x: 0 });
+                    controls.start({ 
+                        opacity: 1, x: 0, 
+                        transition:{ duration: 0.6, ease: 'easeInOut' }
+                    });
                     setHasAnimated(true);
                 }
             },
@@ -32,7 +35,7 @@ const HeroImage: React.FC = () => {
  
 
     return (
-    <motion.div ref={ref} initial={{ opacity: 0, x: -50 }} animate={controls} transition={{ duration: 0.6, ease: 'easeOut' }} className="flex items-center">
+    <motion.div ref={ref} initial={{ opacity: 0, x: -50 }} animate={controls}  className="flex items-center">
         <div className=' overflow-hidden'>
             <Image className=' mt-22  ' alt="" height='900' width='900' src={heroImage}/>
           </div>
