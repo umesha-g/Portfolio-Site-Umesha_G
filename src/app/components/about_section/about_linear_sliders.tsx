@@ -15,7 +15,7 @@ import { LinearSkill } from '../../data/about_section_data/linear_skill_list';
             if (entry.isIntersecting && !hasAnimated) {
             controls.start({
               width: `${Level}%`,
-              transition: { duration: 1.5, ease: "easeInOut",delay:0.4 }
+              transition: { duration: 0.5, ease: "easeInOut",delay:0.4 }
             });
             controls_2.start({
               opacity: 1, x: 0 ,

@@ -33,9 +33,9 @@ export default function About_Section(): JSX.Element {
 
         <div className='wrap relative border-thatch-green-500 border-2 rounded-lg p-10'>
           
-          <h3 className="text-2xl font-semibold mb-4">Skills</h3>
+          <h3 className="text-2xl font-semibold mb-10">Skills</h3>
 
-          <div className="flex flex-wrap justify-center mb-10 grid-cols-2 lg:grid-cols-4  gap-4">
+          <div className="flex flex-wrap justify-center mb-8 grid-cols-2 lg:grid-cols-4  gap-4">
           {circular_skill_list.map((circularSkill: CircularSkill, index: number) => (
             <CircularProgress key={index} {... circularSkill} />
           ))}

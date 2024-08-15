@@ -1,18 +1,35 @@
 import Link from 'next/link';
 import React,{ useEffect, useRef, useState } from 'react';
 import { HiMenu, HiX } from 'react-icons/hi';
+import { motion, useAnimation } from 'framer-motion';
+import useWindowWidth from '../window_width_listener';
+
 
 export default function Navbar() {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMenuOpen, setIsMenuOpen,] = useState(false);
+  const ref = useRef<HTMLDivElement>(null);
+  const controls = useAnimation();
+  const width = useWindowWidth();
 
   const toggleMenu_sectionScroll = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
-    e.preventDefault();
+    const id =e.currentTarget.getAttribute('Id');
+    if(id!='blog'){e.preventDefault();};
     setIsMenuOpen(!isMenuOpen);
+    
     const sectionId = e.currentTarget.getAttribute('section-id');
     const section = document.getElementById(sectionId || '');
     if (section) {
       section.scrollIntoView({ behavior: 'smooth' });
-    }
+    };
+
+    if(width<800){
+      controls.start({ 
+        opacity: 1, y: 0, 
+      });
+      controls.set({
+        opacity: 0, y: 50, 
+      });
+    };
   };
 
   const Reload = (e: React.MouseEvent<HTMLAnchorElement>) => {
@@ -20,31 +37,33 @@ export default function Navbar() {
     window.scrollTo(0, 0);
     window.location.reload();
   };
+
   return (
     <div className="relative z-50">
-      <nav className="bg-ebony-950 fixed top-0 left-0 right-0 px-10 py-2 items-center lg:py-3 2xl:py-4 flex justify-between z-10">
-        <div className="flex justify-start mb-2 lg:mb-0 ml-3 sm:ml-14">
+      <nav className="bg-ebony-950 fixed top-0 left-0 right-0 pl-10 xl:pr-5 2xl:pr-10 py-2 items-center lg:py-3 2xl:py-4 flex justify-between z-10">
+        <div className="flex justify-start mb-2 lg:mb-0 ml-3 md:ml-14">
           <h1 className="text-2xl lg:text-3xl 2xl:text-4xl font-adventbold mr-2 text-thatch-green-500">
-            <Link href="#" onClick={Reload}>UMESHA</Link>
+            <Link href="/" onClick={Reload}>UMESHA</Link>
           </h1>
           <h1 className="text-2xl lg:text-3xl 2xl:text-4xl font-adventthin mr-2 text-thatch-green-500">
-            <Link href="#" onClick={Reload}>G</Link>
+            <Link href="/" onClick={Reload}>G</Link>
           </h1>
           <h1 className="text-2xl lg:text-3xl 2xl:text-4xl font-adventthin mr-2 text-thatch-green-500">
-            <Link href="#" onClick={Reload}>.</Link>
+            <Link href="/" onClick={Reload}>.</Link>
           </h1>
         </div>
         
-        <a onClick={toggleMenu_sectionScroll}> <HiMenu size={30} className="sm:hidden items-center text-3xl mr-2 text-thatch-green-500" /></a>
+        <Link href="#" onClick={toggleMenu_sectionScroll}> <HiMenu size={30} className="md:hidden items-center text-3xl mr-10 sm:mr-20 text-thatch-green-500" /></Link>
         
 
-        <div className={`sm:flex ${isMenuOpen ? 'block' : 'hidden'}  2xl:text-lg justify-end absolute top-0 sm:static left-0 w-full bg-ebony-950 `}>
-          <ul className="flex  flex-col sm:mr-24 sm:flex-row min-h-screen sm:min-h-0 items-center justify-center h-full text-white  bg-ebony-950 ">
-            <li className='my-10  sm:my-0'><a id='about_bt' section-id="about_sc" className="hover:text-thatch-green-500 2xl:px-8 sm:px-6 text-2xl sm:text-base 2xl:text-lg transition-colors duration-300 cursor-pointer" onClick={toggleMenu_sectionScroll}>ABOUT</a></li>
-            <li className='my-10  sm:my-0'><a id='service_bt' section-id="services_sc" className="hover:text-thatch-green-500 2xl:px-8 sm:px-6 text-2xl sm:text-base 2xl:text-lg transition-colors duration-300 cursor-pointer" onClick={toggleMenu_sectionScroll}>SERVICES</a></li>
-            <li className='my-10  sm:my-0'><a id='project_bt' section-id="projects_sc" className="hover:text-thatch-green-500 2xl:px-8 sm:px-6 text-2xl sm:text-base 2xl:text-lg transition-colors duration-300 cursor-pointer" onClick={toggleMenu_sectionScroll}>PROJECTS</a></li>
-            <li className='my-10  sm:my-0'><a id='contact_bt' section-id="contact_sc" className="hover:text-thatch-green-500 2xl:px-8 sm:px-6 text-2xl sm:text-base 2xl:text-lg transition-colors duration-300 cursor-pointer" onClick={toggleMenu_sectionScroll}>CONTACT</a></li>
-            <li className='my-10 sm:my-0 sm:hidden'><a className="sm:px-8 text-4xl mr-2 text-thatch-green-500" onClick={toggleMenu_sectionScroll}><HiX/></a></li>
+        <div ref={ref} className={`md:flex ${isMenuOpen ? 'block' : 'hidden'}  2xl:text-lg justify-end absolute top-0 md:static transition-opacity duration-200 left-0 w-full bg-ebony-950 `}>
+          <ul className="flex  flex-col md:mr-24 md:flex-row min-h-screen md:min-h-0 items-center justify-center h-full text-white  bg-ebony-950 ">
+            <motion.li animate={controls} transition= {{duration: 0.6, ease: 'easeInOut', delay:0.05 }} className='my-10  md:my-0'><Link href="#" id='about_bt' section-id="about_sc" className="hover:text-thatch-green-500 2xl:px-8 md:px-6 text-2xl md:text-base 2xl:text-lg transition-colors duration-300 cursor-pointer" onClick={toggleMenu_sectionScroll}>ABOUT</Link></motion.li>
+            <motion.li animate={controls} transition= {{duration: 0.6, ease: 'easeInOut', delay:0.10 }} className='my-10  md:my-0'><Link href="#" id='service_bt' section-id="services_sc" className="hover:text-thatch-green-500 2xl:px-8 md:px-6 text-2xl md:text-base 2xl:text-lg transition-colors duration-300 cursor-pointer" onClick={toggleMenu_sectionScroll}>SERVICES</Link></motion.li>
+            <motion.li animate={controls} transition= {{duration: 0.6, ease: 'easeInOut', delay:0.15 }} className='my-10  md:my-0'><Link href="#" id='project_bt' section-id="projects_sc" className="hover:text-thatch-green-500 2xl:px-8 md:px-6 text-2xl md:text-base 2xl:text-lg transition-colors duration-300 cursor-pointer" onClick={toggleMenu_sectionScroll}>PROJECTS</Link></motion.li>
+            <motion.li animate={controls} transition= {{duration: 0.6, ease: 'easeInOut', delay:0.20 }} className='my-10  md:my-0'><Link href="#" id='contact_bt' section-id="contact_sc" className="hover:text-thatch-green-500 2xl:px-8 md:px-6 text-2xl md:text-base 2xl:text-lg transition-colors duration-300 cursor-pointer" onClick={toggleMenu_sectionScroll}>CONTACT</Link></motion.li>
+            <motion.li animate={controls} transition= {{duration: 0.6, ease: 'easeInOut', delay:0.20 }} className='my-10  md:my-0'><Link href='blog' id='blog' className="hover:text-thatch-green-500 2xl:px-8 md:px-6 text-2xl md:text-base 2xl:text-lg transition-colors duration-300 cursor-pointer" onClick={toggleMenu_sectionScroll}>BLOG</Link></motion.li>
+            <motion.li animate={controls} transition= {{duration: 0.6, ease: 'easeInOut', delay:0.25 }} className='my-10 md:my-0 md:hidden'><Link href="#" id='close' className="md:px-8 text-4xl mr-2 text-thatch-green-500" onClick={toggleMenu_sectionScroll}><HiX/></Link></motion.li>
           </ul>
         </div>
 

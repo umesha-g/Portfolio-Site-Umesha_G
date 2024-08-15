@@ -16,12 +16,12 @@ export default function Home() {
     
       <GoToTopButton/>
 
-      <section id='hero_sc' className=" min-h-screen">
-        <div className='relative'><Navbar /></div>
-        <div className='relative'><Hero /></div>
+      <section id='hero_sc' className=' min-h-screen'>
+        <Navbar />
+        <Hero />
       </section>
 
-      <section id="about_sc"  className=' '>
+      <section id="about_sc"  className='min-h-screen '>
         <About_Section/>
       </section>
 

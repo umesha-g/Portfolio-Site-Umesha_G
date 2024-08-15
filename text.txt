@@ -53,3 +53,13 @@
       transition={{ duration: 0.6, ease: 'easeOut' }}
       className="bg-white p-4 rounded-lg shadow-md"
     >
+
+     controls_2.start({ 
+        opacity: 1, 
+      });
+      controls_2.set({
+        opacity: 0, 
+      });
+
+      e: React.MouseEvent<HTMLAnchorElement, MouseEvent>
+      e.preventDefault();

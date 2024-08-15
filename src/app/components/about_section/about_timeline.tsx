@@ -15,7 +15,7 @@ const TimelineItem: React.FC<TimeEvents> = ({ year, title, description,visibilit
             ([entry]) => {
                 if (entry.isIntersecting && !hasAnimated) {
                     controls.start({ 
-                        opacity: 1, x: 0 ,
+                        opacity: 1, y: 0 ,
                         transition : { duration: 0.6, ease: 'easeInOut',delay:0.2 }
                     });setHasAnimated(true);
                 }
@@ -33,7 +33,7 @@ const TimelineItem: React.FC<TimeEvents> = ({ year, title, description,visibilit
     }, [controls, hasAnimated]); 
     
   return (
-    <motion.div ref={ref} initial={{ opacity: 0, x: -50 }} animate={controls}  className="  ">
+    <motion.div ref={ref} initial={{ opacity: 0, y: -10 }} animate={controls}  className="  ">
         <div className="order-1  border-0 rounded-lg  lg:mx-44 lg:px-6 ">
             <ol className="relative border-l-4  ml-5 h-48 lg:h-40 border-gray-200 ">                  
                 <li className="mb-8 mx-3 pb-2">            
