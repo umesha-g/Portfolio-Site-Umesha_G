@@ -1,0 +1,16 @@
+.aboutback {
+    background-image: url('./swipable_bg.png');
+    background-size: 160% auto ;
+    background-position: left top;
+  }
+  
+  @media screen and (min-width: 1500px) {
+
+    .aboutback {
+      
+      background-image: url('./swipable_bg.png');
+      background-size: 80% auto ;
+      background-position: left top;
+    }
+    
+  }
