@@ -12,6 +12,7 @@ import BorderdAnimatedDivision from '../bordered_animated_div';
 import { linear_language_list } from '@/app/data/about_section_data/linear_language_list';
 import NoBorderdAnimatedDivision from '../no_border_animated_div';
 import { skills_list_2 } from '@/app/data/about_section_data/swipable_skills_list_2';
+import { skills_list_3 } from '@/app/data/about_section_data/swipable_skills_list_3';
 
 export default function About_Section(): JSX.Element {
 
@@ -59,7 +60,7 @@ export default function About_Section(): JSX.Element {
 
           <NoBorderdAnimatedDivision className="mb-20 ">
           <p className="text-lg font-semibold mt-10 mb-10">Cloud Platforms & Databases</p>
-            <SwipeableDiv skills_list={skills_list_2} />
+            <SwipeableDiv skills_list={skills_list_3} />
           </NoBorderdAnimatedDivision>
 
           <h3 className="text-2xl font-semibold mt-10 mb-10">Other Skills</h3>
