@@ -17,11 +17,11 @@ const TimelineItem: React.FC<TimeEvents> = ({ year, title, description,visibilit
                 if (entry.isIntersecting && !hasAnimated) {
                     controls.start({ 
                         opacity: 1, y: 0 ,
-                        transition : { duration: 0.6, ease: 'easeInOut',delay:0.2 }
+                        transition : { duration: 0.6, ease: 'easeInOut',delay:0.1 }
                     });
                     controls_2.start({ 
                         opacity: 1 ,
-                        transition : { duration: 0.6, ease: 'easeInOut',delay:1 }
+                        transition : { duration: 0.6, ease: 'easeInOut',delay:0.5 }
                     });setHasAnimated(true);
                 }
             },
@@ -40,7 +40,7 @@ const TimelineItem: React.FC<TimeEvents> = ({ year, title, description,visibilit
   return (
     <motion.div ref={ref} initial={{ opacity: 0, y: -10 }} animate={controls}  className="  ">
         <div className="order-1  border-0 rounded-lg  lg:mx-44 lg:px-6 ">
-            <ol className="relative border-l-8  ml-5 pb-3 h-auto lg:pb-5 border-gray-500 ">                  
+            <ol className="relative border-l-8  ml-5 pb-3 h-auto lg:pb-5 border-bunker-700 ">                  
                 <li className=" mx-3 pb-3">            
                     <span className="absolute flex items-center justify-center w-14 h-14 rounded-full -start-8 bg-thatch-green-500">
                         <Icon color='black' size='28' /> 

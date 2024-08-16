@@ -25,7 +25,7 @@ export default function Home() {
         <About_Section/>
       </section>
 
-      <section id="services_sc" className='min-h-screen bg-thatch-green-500'>
+      <section id="services_sc" className='min-h-screen '>
         <Service_Section/>
       </section>
 

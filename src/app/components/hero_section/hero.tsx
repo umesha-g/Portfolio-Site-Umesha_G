@@ -3,6 +3,7 @@ import { AiFillGithub, AiFillLinkedin, } from 'react-icons/ai';
 import { TbBrandFiverr } from 'react-icons/tb';
 import Image from 'next/image';
 import HeroImage from './hero_image';
+import NoBorderdAnimatedDivision from '../no_border_animated_div';
 
 export default function Hero() {
 
@@ -10,7 +11,7 @@ export default function Hero() {
       
         <div className=' lg:grid grid-cols-2 lg:min-h-screen grid-flow-col  lg:mx-10 mx-4 '>
 
-          <div className= 'pt-5 lg:pt-0 mx-12 lg:ml-24 2xl:ml-44 lg:mx-20 lg:flex '>
+          <NoBorderdAnimatedDivision className= 'pt-5 lg:pt-0 mx-12 lg:ml-24 2xl:ml-44 lg:mx-20 lg:flex '>
             <div className='mt-20 lg:mt-44 2xl:mt-80'>
 
               <div className='text-center lg:text-left'>
@@ -26,11 +27,11 @@ export default function Hero() {
               </div>
 
               <div className=' flex items-center justify-center lg:justify-start'>
-                <a className="bg-thatch-green-500 text-slate-900 px-4 py-2 rounded 2xl:px-6 2xl:py-3 2xl:text-xl" href="#">Resume</a>
+                <a className="bg-bunker-600 text-white px-4 py-2 rounded 2xl:px-6 2xl:py-3 2xl:text-xl" href="#">Resume</a>
               </div>
 
             </div>
-          </div>
+          </NoBorderdAnimatedDivision>
 
           <div className=' overflow-hidden'>
             <HeroImage/>

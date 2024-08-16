@@ -3,6 +3,7 @@ import React,{ useEffect, useRef, useState } from 'react';
 import { HiMenu, HiX } from 'react-icons/hi';
 import { motion, useAnimation } from 'framer-motion';
 import useWindowWidth from '../window_width_listener';
+import styles from './hero.module.css'
 
 
 export default function Navbar() {
@@ -40,7 +41,7 @@ export default function Navbar() {
 
   return (
     <div className="relative z-50">
-      <nav className="bg-ebony-950 fixed top-0 left-0 right-0 pl-10 xl:pr-5 2xl:pr-10 py-2 items-center lg:py-3 2xl:py-4 flex justify-between z-10">
+      <nav className={`${styles.container} bg-ebony-950 fixed top-0 left-0 right-0 pl-10 xl:pr-5 2xl:pr-10 py-2 items-center lg:py-3 2xl:py-4 flex justify-between z-10`}>
         <div className="flex justify-start mb-2 lg:mb-0 ml-3 md:ml-14">
           <h1 className="text-2xl lg:text-3xl 2xl:text-4xl font-adventbold mr-2 text-thatch-green-500">
             <Link href="/" onClick={Reload}>UMESHA</Link>
@@ -56,8 +57,8 @@ export default function Navbar() {
         <Link href="#" onClick={toggleMenu_sectionScroll}> <HiMenu size={30} className="md:hidden items-center text-3xl mr-10 sm:mr-20 text-thatch-green-500" /></Link>
         
 
-        <div ref={ref} className={`md:flex ${isMenuOpen ? 'block' : 'hidden'}  2xl:text-lg justify-end absolute top-0 md:static transition-opacity duration-200 left-0 w-full bg-ebony-950 `}>
-          <ul className="flex  flex-col md:mr-24 md:flex-row min-h-screen md:min-h-0 items-center justify-center h-full text-white  bg-ebony-950 ">
+        <div ref={ref} className={`md:flex ${isMenuOpen ? 'block' : 'hidden'} 2xl:text-lg justify-end absolute top-0 md:static left-0 w-full bg-ebony-950 `}>
+          <ul className={`${styles.container} flex flex-col md:mr-24 md:flex-row min-h-screen md:min-h-0 items-center justify-center h-full text-white  bg-ebony-950 `}>
             <motion.li animate={controls} transition= {{duration: 0.6, ease: 'easeInOut', delay:0.05 }} className='my-10  md:my-0'><Link href="#" id='about_bt' section-id="about_sc" className="hover:text-thatch-green-500 2xl:px-8 md:px-6 text-2xl md:text-base 2xl:text-lg transition-colors duration-300 cursor-pointer" onClick={toggleMenu_sectionScroll}>ABOUT</Link></motion.li>
             <motion.li animate={controls} transition= {{duration: 0.6, ease: 'easeInOut', delay:0.10 }} className='my-10  md:my-0'><Link href="#" id='service_bt' section-id="services_sc" className="hover:text-thatch-green-500 2xl:px-8 md:px-6 text-2xl md:text-base 2xl:text-lg transition-colors duration-300 cursor-pointer" onClick={toggleMenu_sectionScroll}>SERVICES</Link></motion.li>
             <motion.li animate={controls} transition= {{duration: 0.6, ease: 'easeInOut', delay:0.15 }} className='my-10  md:my-0'><Link href="#" id='project_bt' section-id="projects_sc" className="hover:text-thatch-green-500 2xl:px-8 md:px-6 text-2xl md:text-base 2xl:text-lg transition-colors duration-300 cursor-pointer" onClick={toggleMenu_sectionScroll}>PROJECTS</Link></motion.li>

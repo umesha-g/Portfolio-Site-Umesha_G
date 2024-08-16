@@ -1,0 +1,16 @@
+.container { 
+  background-image: url('./background_3.svg');
+  background-repeat: repeat-y ;
+  background-size:200% auto;
+  background-position: center top;
+}
+
+@media screen and (min-width: 1500px) {
+
+  .container {
+    background-image: url('./background_3.svg');
+    background-repeat: repeat-y;
+    background-size: 200% auto;
+    background-position: right top;
+  }
+}

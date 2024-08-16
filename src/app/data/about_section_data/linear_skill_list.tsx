@@ -1,28 +1,33 @@
 
-export interface LinearSkill {
+export interface LinearInput {
     name: string;
     Level: number;
   }
 
-export const linear_skill_list:LinearSkill[] = [
+export const linear_skill_list:LinearInput[] = [
 
     {
-        name: 'Java414241Script',
-        Level: 80 ,
-    },
-
-    {
-        name: 'gfhfdf',
+        name: 'Software Engineering',
         Level: 70 ,
     },
 
     {
-        name: 'Jaafa',
-        Level: 40 ,
+        name: 'Graphic Designing',
+        Level: 80 ,
     },
 
     {
-        name: 'Java414241Script',
-        Level: 80 ,
+        name: 'System Design and Architecture',
+        Level: 70 ,
+    },
+
+    {
+        name: 'Data Analyzing',
+        Level: 60 ,
+    },
+
+    {
+        name: 'Branding Consultancy',
+        Level: 60 ,
     },
 ]

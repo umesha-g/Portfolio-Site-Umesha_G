@@ -11,7 +11,7 @@ export default function Contact_Section(): JSX.Element {
                 <h3 className='lg:text-4xl text-3xl font-bold mb-4 lg:mb-8 text-center text-thatch-green-500'>Contact Me</h3>
             </div>
 
-            <div className='flex flex-col lg:flex-row text-gray-300 items-start lg:justify-between ml-16 lg:px-96 lg:h-20 h-40 '>
+            <div className='flex flex-col lg:flex-row text-bunker-200 items-start lg:justify-between ml-16 lg:px-96 lg:h-20 h-40 '>
                 <span className='flex justify-center items-center mb-5 xl:mb-0 lg:mx-10'><MdEmail className='mr-5' size={29} /><h4 className='lg:w-44'><Link href='mailto:g.umesha.madushan@gmail.com'>E - Mail</Link></h4></span>
                 <span className='flex justify-center items-center mb-5 xl:mb-0 lg:mx-10'><FaPhoneSquareAlt className='mr-5' size={28} /><h4 className='lg:w-36'><Link href="tel:+94716458801">(+94) 716-458-801</Link></h4></span>
                 <span className='flex justify-center items-center mb-5 xl:mb-0 lg:mx-10'><FaLinkedin className='mr-5' size={28} /><h4 className='lg:w-36'><Link href='/'>LinkedIn</Link></h4></span>

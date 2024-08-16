@@ -2,6 +2,7 @@ import React, { useState, useRef, useCallback, useEffect } from 'react';
 import { motion,useAnimation } from 'framer-motion';
 import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 import { MdKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from 'react-icons/md';
+import styles from './about.module.css';
 
 interface Skill {
   name: string;
@@ -86,7 +87,7 @@ const SwipeableDiv: React.FC<SwipeableDivProps> = ({ skills_list }) => {
           if (entry.isIntersecting && !hasAnimated) {
           controls.start({
             opacity: 1, x: 0 ,
-            transition: { duration: 0.5, ease: "easeInOut" ,delay:0.2 }
+            transition: { duration: 0.5, ease: "easeInOut" ,delay:0.1 }
           });setHasAnimated(true);
         }
       },
@@ -103,7 +104,7 @@ const SwipeableDiv: React.FC<SwipeableDivProps> = ({ skills_list }) => {
   }, [controls ,hasAnimated]); 
 
   return (
-    <motion.div animate={controls} ref={ref} initial={{ opacity: 0, x: 50 }} className="relative rounded-lg overflow-hidden shadow-md">
+    <motion.div animate={controls} ref={ref} initial={{ opacity: 0, x: 50 }} className={` relative rounded-lg overflow-hidden shadow-md`}>
       <div
         ref={containerRef}
         className="flex transition-transform duration-300 ease-in-out"
@@ -116,14 +117,14 @@ const SwipeableDiv: React.FC<SwipeableDivProps> = ({ skills_list }) => {
         {skills_list.map((skill, index) => (
           <motion.div
             key={index}
-            className="flex-shrink-0 w-full bg-thatch-green-500 p-6 rounded-lg shadow-md"
+            className={`${styles.aboutback} flex-shrink-0 w-full bg-bunker-900 p-6 rounded-lg shadow-md`}
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -20 }}
             transition={{ duration: 0.3 }}
           >
             <div className='lg:mx-20 ' >
-            <h4 className="text-xl text-white font-semibold mb-2">{skill.name}</h4>
+            <h4 className="text-xl text-thatch-green-500 font-semibold mb-2">{skill.name}</h4>
             <p className="mb-4  text-white ">{skill.description}</p>
             </div>
           </motion.div>

@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, useAnimation } from 'framer-motion';
-import { LinearSkill } from '../../data/about_section_data/linear_skill_list';
+import { LinearInput } from '../../data/about_section_data/linear_skill_list';
 
-  const SkillCard: React.FC<LinearSkill> = ({ name, Level }) => {
+  const LinearCard: React.FC<LinearInput> = ({ name, Level }) => {
     const controls = useAnimation();
     const controls_2 = useAnimation();
     const controls_3 = useAnimation();
@@ -15,11 +15,11 @@ import { LinearSkill } from '../../data/about_section_data/linear_skill_list';
             if (entry.isIntersecting && !hasAnimated) {
             controls.start({
               width: `${Level}%`,
-              transition: { duration: 0.5, ease: "easeInOut",delay:0.4 }
+              transition: { duration: 0.5, ease: "easeInOut",delay:0.3 }
             });
             controls_2.start({
               opacity: 1, x: 0 ,
-              transition: { duration: 0.5, ease: "easeInOut",delay:0.3 }
+              transition: { duration: 0.5, ease: "easeInOut",delay:0.2 }
             });
             controls_3.start({
               opacity: 1 ,
@@ -43,11 +43,11 @@ import { LinearSkill } from '../../data/about_section_data/linear_skill_list';
     return (
       <motion.div ref={ref} initial={{ opacity: 0 }} animate={controls_3} className=" p-4 rounded-lg ">
         <motion.h3 initial={{ opacity: 0, x: -10 }} animate={controls_2} className="text-lg font-semibold ml-1 mb-2">{name}</motion.h3>
-        <div  className="w-full bg-gray-600 rounded-full h-2.5">
+        <div  className="w-full bg-bunker-700 rounded-full h-2.5">
           <motion.div className="bg-thatch-green-500 h-2.5 rounded-full" initial={{ width: '0%' }} animate={controls}/>
         </div>
       </motion.div>
     );
   };
 
-  export default SkillCard;
+  export default LinearCard;
