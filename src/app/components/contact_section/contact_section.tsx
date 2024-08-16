@@ -15,7 +15,7 @@ export default function Contact_Section(): JSX.Element {
                 <span className='flex justify-center items-center mb-5 xl:mb-0 lg:mx-10'><MdEmail className='mr-5' size={29} /><h4 className='lg:w-44'><Link href='mailto:g.umesha.madushan@gmail.com'>E - Mail</Link></h4></span>
                 <span className='flex justify-center items-center mb-5 xl:mb-0 lg:mx-10'><FaPhoneSquareAlt className='mr-5' size={28} /><h4 className='lg:w-36'><Link href="tel:+94716458801">(+94) 716-458-801</Link></h4></span>
                 <span className='flex justify-center items-center mb-5 xl:mb-0 lg:mx-10'><FaLinkedin className='mr-5' size={28} /><h4 className='lg:w-36'><Link href='/'>LinkedIn</Link></h4></span>
-                <span className='flex justify-center items-center mb-5 xl:mb-0 lg:mx-10'><FaFacebookSquare className='mr-5' size={28} /><h4 className='lg:w-36'><Link href='/'>Facebook</Link></h4></span>
+                <span className='flex justify-center items-center mb-5 xl:mb-0 lg:mx-10'><FaFacebookSquare className='mr-5' size={28} /><h4 className='lg:w-36'><Link href='/'>Facebook ?</Link></h4></span>
             
             </div>
             <div className=''>

@@ -6,7 +6,8 @@ import { FaCalendarDays } from 'react-icons/fa6';
 import { TfiLineDashed } from 'react-icons/tfi';
 
 const TimelineItem: React.FC<TimeEvents> = ({ year, title, description,visibility,Icon}) => {
-  const controls = useAnimation();
+    const controls = useAnimation();
+    const controls_2 = useAnimation();
     const ref = useRef<HTMLDivElement>(null);
     const [hasAnimated, setHasAnimated] = useState(false);
 
@@ -17,6 +18,10 @@ const TimelineItem: React.FC<TimeEvents> = ({ year, title, description,visibilit
                     controls.start({ 
                         opacity: 1, y: 0 ,
                         transition : { duration: 0.6, ease: 'easeInOut',delay:0.2 }
+                    });
+                    controls_2.start({ 
+                        opacity: 1 ,
+                        transition : { duration: 0.6, ease: 'easeInOut',delay:1 }
                     });setHasAnimated(true);
                 }
             },
@@ -30,23 +35,26 @@ const TimelineItem: React.FC<TimeEvents> = ({ year, title, description,visibilit
         return () => {
             observer.disconnect();
         };
-    }, [controls, hasAnimated]); 
+    }, [controls,controls_2, hasAnimated]); 
     
   return (
     <motion.div ref={ref} initial={{ opacity: 0, y: -10 }} animate={controls}  className="  ">
         <div className="order-1  border-0 rounded-lg  lg:mx-44 lg:px-6 ">
-            <ol className="relative border-l-4  ml-5 h-48 lg:h-40 border-gray-200 ">                  
-                <li className="mb-8 mx-3 pb-2">            
-                    <span className="absolute flex items-center justify-center w-14 h-14 rounded-full -start-7 bg-thatch-green-500">
+            <ol className="relative border-l-8  ml-5 pb-3 h-auto lg:pb-5 border-gray-500 ">                  
+                <li className=" mx-3 pb-3">            
+                    <span className="absolute flex items-center justify-center w-14 h-14 rounded-full -start-8 bg-thatch-green-500">
                         <Icon color='black' size='28' /> 
                     </span>
+                   
                     <span className=' text-balance'>
                         <h3 className="flex items-center mb-1 text-lg font-semibold text-white mx-10">{year} <span className={`bg-thatch-green-500  text-white text-sm font-medium mx-5 ${visibility} px-3 py-0.5 rounded `}>Latest</span></h3>
                         <h4 className="block mb-2 text-lg font-normal  text-gray-300  ml-10">{title}</h4>
                         <p className="mb-4 text-base font-normal text-gray-500  ml-10">{description}</p>
                     </span>
+                    <motion.span initial={{ opacity: 0 }} animate={controls_2} className="absolute flex items-center justify-center w-4 h-4 rounded-full mt-6 lg:mt-8 -start-3  bg-thatch-green-500"></motion.span>
                 </li>
             </ol>
+            
         </div>
     </motion.div>
   );

@@ -43,7 +43,7 @@ import { LinearSkill } from '../../data/about_section_data/linear_skill_list';
     return (
       <motion.div ref={ref} initial={{ opacity: 0 }} animate={controls_3} className=" p-4 rounded-lg ">
         <motion.h3 initial={{ opacity: 0, x: -10 }} animate={controls_2} className="text-lg font-semibold ml-1 mb-2">{name}</motion.h3>
-        <div  className="w-full bg-white rounded-full h-2.5">
+        <div  className="w-full bg-gray-600 rounded-full h-2.5">
           <motion.div className="bg-thatch-green-500 h-2.5 rounded-full" initial={{ width: '0%' }} animate={controls}/>
         </div>
       </motion.div>

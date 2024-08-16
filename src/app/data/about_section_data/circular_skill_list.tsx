@@ -7,22 +7,32 @@ export interface CircularSkill {
 export const circular_skill_list:CircularSkill[] = [
 
     {
-        name: 'Java4142',
+        name: 'Java',
         percentage: 80 ,
     },
 
     {
-        name: 'gfhfdf',
+        name: 'Typescript',
         percentage: 70 ,
     },
 
     {
-        name: 'Jaafa',
-        percentage: 40 ,
+        name: 'JavaScript',
+        percentage: 70 ,
     },
 
     {
-        name: 'Java41424',
-        percentage: 80 ,
+        name: 'C',
+        percentage: 50 ,
+    },
+
+    {
+        name: 'Python',
+        percentage: 50 ,
+    },
+
+    {
+        name: 'MySql',
+        percentage: 50 ,
     },
 ]

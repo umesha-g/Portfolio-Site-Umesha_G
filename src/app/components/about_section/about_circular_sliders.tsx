@@ -44,8 +44,8 @@ const CircularProgress: React.FC<CircularSkill> = ({ name, percentage }) => {
     
     <motion.div ref={ref} initial={{ opacity: 0 }} animate={controls_3} className="flex flex-col h-40 w-32 items-center">
       <svg className="w-20 h-20">
-        <circle className="text-gray-300" strokeWidth="7" stroke="currentColor" fill="transparent" r="35" cx="40" cy="40" />
-        <motion.circle className="text-thatch-green-500" strokeWidth="7" strokeLinecap="round" stroke="currentColor" fill="transparent" r="35" cx="40" cy="40" style={{strokeDasharray: 2 * Math.PI * 30, }} initial={{ strokeDashoffset: 2 * Math.PI * 30 }} animate={controls} />
+        <circle className="text-gray-600" strokeWidth="10" stroke="currentColor" fill="transparent" r="35" cx="40" cy="40" />
+        <motion.circle className="text-thatch-green-500" strokeWidth="10" strokeLinecap="round" stroke="currentColor" fill="transparent" r="35" cx="40" cy="40" style={{strokeDasharray: 2 * Math.PI * 30, }} initial={{ strokeDashoffset: 2 * Math.PI * 30 }} animate={controls} />
         <motion.text initial={{ opacity: 0, y: 10 }} animate={controls_2} fill="white" textAnchor="middle" x="42" y="45" >{percentage}%</motion.text>
       </svg>
       <motion.span initial={{ opacity: 0, y: 10 }} animate={controls_2} className="mt-2 text-xl font-semibold">{name}</motion.span>
