@@ -1,9 +1,9 @@
 /** @type {import('next').NextConfig} */
 
-const isProd = process.env.NODE_ENV ='production';
+/*const isProd = process.env.NODE_ENV ='development';*/
 
 const nextConfig = {
-    basePath: isProd ? '/Portfolio-Site-Umesha_G' : '',
+    /*basePath: isProd ? '/Portfolio-Site-Umesha_G' : '/',*/
     output: 'export',
     images:{
         unoptimized:true,
