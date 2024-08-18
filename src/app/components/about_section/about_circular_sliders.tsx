@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, useAnimation } from 'framer-motion';
-import { CircularSkill } from '../../data/about_section_data/circular_skill_list';
+import { CircularSkill } from '#/data/about_section_data/circular_skill_list';
 
 const CircularProgress: React.FC<CircularSkill> = ({ name, percentage }) => {
   const controls = useAnimation();
@@ -42,7 +42,7 @@ const CircularProgress: React.FC<CircularSkill> = ({ name, percentage }) => {
 
   return (
     
-    <motion.div ref={ref} initial={{ opacity: 0 }} animate={controls_3} className="flex flex-col h-40 w-32 items-center">
+    <motion.div ref={ref} initial={{ opacity: 0 }} animate={controls_3} className="flex flex-col h-40 w-28 lg:w-40 items-center">
       <svg className="w-20 h-20">
         <circle className="text-bunker-700" strokeWidth="10" stroke="currentColor" fill="transparent" r="35" cx="40" cy="40" />
         <motion.circle className="text-thatch-green-500" strokeWidth="10" strokeLinecap="round" stroke="currentColor" fill="transparent" r="35" cx="40" cy="40" style={{strokeDasharray: 2 * Math.PI * 30, }} initial={{ strokeDashoffset: 2 * Math.PI * 30 }} animate={controls} />

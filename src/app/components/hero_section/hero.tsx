@@ -9,9 +9,9 @@ export default function Hero() {
 
     return (
       
-        <div className=' lg:grid grid-cols-2 lg:min-h-screen grid-flow-col  lg:mx-10 mx-4 '>
+        <div className='flex-col flex lg:grid lg:grid-cols-2  grid-flow-col  lg:mx-10 mx-0 '>
 
-          <NoBorderdAnimatedDivision className= 'pt-5 lg:pt-0 mx-12 lg:ml-24 2xl:ml-44 lg:mx-20 lg:flex '>
+          <NoBorderdAnimatedDivision className= 'pt-5 lg:pt-20 2xl:pt-0 mx-12 lg:ml-24 2xl:ml-44 lg:mx-20 lg:flex '>
             <div className='mt-20 lg:mt-44 2xl:mt-80'>
 
               <div className='text-center lg:text-left'>

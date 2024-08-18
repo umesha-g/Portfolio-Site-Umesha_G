@@ -1,5 +1,5 @@
 .container { 
-  background-image: url('./UI/background_3.svg');
+  background-image: url('../../public/assets/main_background/background_3.svg');
   background-repeat: repeat-y ;
   background-size:200% auto;
   background-position: center top;
@@ -9,10 +9,10 @@
 
   .container {
     
-    background-image: url('./UI/background_3.svg');
+    background-image: url('../../public/assets/main_background/background_3.svg');
     background-repeat: repeat-y;
     background-size: 150% auto;
-    background-position: left top;
+    background-position: right top;
   }
   
 }

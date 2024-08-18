@@ -24,7 +24,7 @@ export default function Contact_Section(): JSX.Element {
                     <div className="sm:flex sm:items-center sm:justify-between">
                     </div>
                         <hr className="my-6 border-thatch-green-500 sm:mx-auto lg:my-8" />
-                        <span className="block text-sm text-thatch-green-500 sm:text-center ">Designed By Umesha G. © 2024 All Rights Reserved.</span>
+                        <span className="block text-sm text-thatch-green-500 text-center ">Designed By Umesha G. © 2024 All Rights Reserved.</span>
                     </div>
                 </footer>
             </div>

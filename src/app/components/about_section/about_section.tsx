@@ -1,18 +1,18 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Skill,skills_list_1 } from '../../data/about_section_data/swipable_skills_list_1';
+import { Skill,skills_list_1 } from '#/data/about_section_data/swipable_skills_list_1';
 import SwipeableDiv from './about_swipable_card';
 import LinearCard from './about_linear_sliders';
 import CircularProgress from './about_circular_sliders';
-import {LinearInput,linear_skill_list} from '../../data/about_section_data/linear_skill_list';
-import {CircularSkill, circular_skill_list } from '../../data/about_section_data/circular_skill_list';
-import {TimeEvents, time_line_data } from '../../data/about_section_data/time_line_data';
+import {LinearInput,linear_skill_list} from '#/data/about_section_data/linear_skill_list';
+import {CircularSkill, circular_skill_list } from '#/data/about_section_data/circular_skill_list';
+import {TimeEvents, time_line_data } from '#/data/about_section_data/time_line_data';
 import Time_Line from './about_timeline';
 import Numberload from './about_number';
 import BorderdAnimatedDivision from '../bordered_animated_div';
-import { linear_language_list } from '@/app/data/about_section_data/linear_language_list';
+import { linear_language_list } from '#/data/about_section_data/linear_language_list';
 import NoBorderdAnimatedDivision from '../no_border_animated_div';
-import { skills_list_2 } from '@/app/data/about_section_data/swipable_skills_list_2';
-import { skills_list_3 } from '@/app/data/about_section_data/swipable_skills_list_3';
+import { skills_list_2 } from '#/data/about_section_data/swipable_skills_list_2';
+import { skills_list_3 } from '#/data/about_section_data/swipable_skills_list_3';
 
 export default function About_Section(): JSX.Element {
 

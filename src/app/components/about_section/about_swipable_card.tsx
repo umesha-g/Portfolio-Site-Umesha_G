@@ -147,7 +147,7 @@ const SwipeableDiv: React.FC<SwipeableDivProps> = ({ skills_list }) => {
           <button
             key={index}
             onClick={() => setCurrentSkill(index)}
-            className={`w-3 h-3 rounded-full ${index === currentSkill ? 'bg-ebony-950' : 'bg-gray-300'}`}
+            className={`w-3 h-3 rounded-full ${index === currentSkill ? 'bg-bunker-950' : 'bg-gray-300'}`}
           />
         ))}
       </div>

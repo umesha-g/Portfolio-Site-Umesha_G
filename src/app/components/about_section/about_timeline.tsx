@@ -1,9 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, useAnimation } from 'framer-motion';
-import { BsArrowRight } from 'react-icons/bs';
-import { TimeEvents } from '../../data/about_section_data/time_line_data';
-import { FaCalendarDays } from 'react-icons/fa6';
-import { TfiLineDashed } from 'react-icons/tfi';
+import { TimeEvents } from '#/data/about_section_data/time_line_data';
 
 const TimelineItem: React.FC<TimeEvents> = ({ year, title, description,visibility,Icon}) => {
     const controls = useAnimation();

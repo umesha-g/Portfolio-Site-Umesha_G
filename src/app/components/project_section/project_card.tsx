@@ -1,6 +1,6 @@
 import React,{ useState, useEffect, useRef } from 'react';
 import { ExternalLink, Github } from 'lucide-react';
-import { Project } from '@/app/data/projects_data/projects_list';
+import { Project } from '#/data/projects_data/projects_list';
 import { motion, useAnimation } from 'framer-motion';
 import styles from './project.module.css';
 
@@ -37,7 +37,7 @@ const ProjectCard: React.FC<Project> = ({ title, description, projectUrl, github
      <div className={`${styles.projback}`}> 
       <div>{/*image*/}</div>
       <div className={` px-6 py-4`}>
-        <div className="font-bold text-xl mb-2 text-ebony-950 ">{title}</div>
+        <div className="font-bold text-xl mb-2 text-bunker-950 ">{title}</div>
         <p className="text-white text-base">{description}</p>
       </div>
       <div className="px-6 pt-4 pb-2 flex justify-between">

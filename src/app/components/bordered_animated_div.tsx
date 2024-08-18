@@ -5,10 +5,7 @@ interface MotionContainerProps extends React.HTMLAttributes<HTMLDivElement> {
     children: React.ReactNode;
   }
 
-const BorderdAnimatedDivision: React.FC<MotionContainerProps> = ({
-    children,
-    ...props
-  }) => {
+const BorderdAnimatedDivision: React.FC<MotionContainerProps> = ({children,...props }) => {
 
     const controls = useAnimation();
     const ref = useRef<HTMLDivElement>(null);
@@ -39,7 +36,7 @@ const BorderdAnimatedDivision: React.FC<MotionContainerProps> = ({
         }, [controls,hasAnimated]);
 
     return (
-        <motion.div ref={ref} initial={{ opacity: 0 }} animate={controls} className={`relative border-2 bg-transparent border-thatch-green-500 rounded-lg p-12 my-14 bg-gray-100`}>
+        <motion.div ref={ref} initial={{ opacity: 0 }} animate={controls} className={`relative border-2 bg-transparent border-thatch-green-500 rounded-lg px-6 lg:px-12 py-12 my-12 bg-gray-100`}>
           {children}
         </motion.div>
     );

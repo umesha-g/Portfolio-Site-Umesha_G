@@ -12,7 +12,7 @@ import styles from './Layout.module.css';
 export default function Home() {
   
   return (
-    <main className={`${styles.container} bg-ebony-950 font-jost text-white overflow-hidden` }>
+    <main className={`${styles.container} bg-bunker-950 font-jost text-white overflow-hidden` }>
     
       <GoToTopButton/>
 

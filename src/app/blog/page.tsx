@@ -7,7 +7,7 @@ import BlogNavbar from './blog_navbar';
 export default function Blog() {
  
     return (
-        <main className={`${styles.container} bg-ebony-950 font-jost min-h-screen text-white overflow-hidden` }>
+        <main className={`${styles.container} bg-bunker-950 font-jost min-h-screen text-white overflow-hidden` }>
           <GoToTopButton/>
           <BlogNavbar/>
           <section className='min-h-screen text-center items-center justify-center  flex '>
