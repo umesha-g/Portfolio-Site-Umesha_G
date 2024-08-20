@@ -36,7 +36,7 @@ const BorderdAnimatedDivision: React.FC<MotionContainerProps> = ({children,...pr
         }, [controls,hasAnimated]);
 
     return (
-        <motion.div ref={ref} initial={{ opacity: 0 }} animate={controls} className={`relative border-2 bg-transparent border-thatch-green-500 rounded-lg px-6 lg:px-12 py-12 my-12 bg-gray-100`}>
+        <motion.div ref={ref} initial={{ opacity: 0 }} animate={controls} className={`relative border-2 border-thatch-green-500 rounded-lg px-6 lg:px-12 py-12 my-12`}>
           {children}
         </motion.div>
     );

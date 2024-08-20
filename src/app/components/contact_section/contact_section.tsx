@@ -8,7 +8,7 @@ export default function Contact_Section(): JSX.Element {
     return (
         <div className='flex flex-col h-96'>
             <div className='flex-1 xl:py-10 py-5'>
-                <h3 className='lg:text-4xl text-3xl font-bold mb-4 lg:mb-8 text-center text-thatch-green-500'>Contact Me</h3>
+                <h3 className='lg:text-4xl text-3xl font-bold mb-4 lg:mb-8 text-center text-red-1'>Contact Me</h3>
             </div>
 
             <div className='flex flex-col lg:flex-row text-bunker-200 items-start lg:justify-between ml-16 lg:px-96 lg:h-20 h-40 '>
@@ -23,8 +23,8 @@ export default function Contact_Section(): JSX.Element {
                     <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
                     <div className="sm:flex sm:items-center sm:justify-between">
                     </div>
-                        <hr className="my-6 border-thatch-green-500 sm:mx-auto lg:my-8" />
-                        <span className="block text-sm text-thatch-green-500 text-center ">Designed By Umesha G. © 2024 All Rights Reserved.</span>
+                        <hr className="my-6 border-red-1 sm:mx-auto lg:my-8" />
+                        <span className="block text-sm text-red-1 text-center ">Designed By Umesha G. © 2024 All Rights Reserved.</span>
                     </div>
                 </footer>
             </div>

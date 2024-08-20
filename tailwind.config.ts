@@ -1,4 +1,4 @@
-import { Genos, Merriweather } from "next/font/google";
+import { Genos, Merriweather,Jost } from "next/font/google";
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -39,7 +39,16 @@ const config: Config = {
             '900': '#433c19',
             '950': '#29250a',
         },
-
+        'dark-brown':'#151616',
+        'beige':'#B58863',
+        'light-gray':'#D3C3B9',
+        'mid-gray':'#A79E9C',
+        'blue-1':'#3D4D55',
+        'blue-2':'#10232A',
+        'red-1':'#B51A2B',
+        'red-2':'#541A2E',
+        'red-3' :'#BE4039',
+        
     
       },
 
@@ -48,10 +57,15 @@ const config: Config = {
         adventthin: ['advent_thin'],
         genos: ['genos'],
         Merriweather:['Merriweather-Bold'],
-        jost:['Jost'],
+        jost:['Jost','serif'],
         italianno:['italianno'],
-        backto:['backto']
+        backto:['backto'],
       },
+
+      fontSize: {
+      
+        '7xl': '7rem',
+      }
       
     },
 

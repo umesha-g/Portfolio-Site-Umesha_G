@@ -36,19 +36,19 @@ const TimelineItem: React.FC<TimeEvents> = ({ year, title, description,visibilit
     
   return (
     <motion.div ref={ref} initial={{ opacity: 0, y: -10 }} animate={controls}  className="  ">
-        <div className="order-1  border-0 rounded-lg  lg:mx-44 lg:px-6 ">
-            <ol className="relative border-l-8  ml-5 pb-3 h-auto lg:pb-5 border-bunker-700 ">                  
+        <div className="order-1  border-0 rounded-lg   lg:px-6 ">
+            <ol className="relative border-l-4  ml-5 pb-3 h-auto lg:pb-5 border-neutral-300 ">                  
                 <li className=" mx-3 pb-3">            
-                    <span className="absolute flex items-center justify-center w-14 h-14 rounded-full -start-8 bg-thatch-green-500">
-                        <Icon color='black' size='28' /> 
+                    <span className="absolute flex items-center justify-center w-10 h-10 rounded-full -start-5 bg-red-1">
+                        <Icon color='black' size='20' /> 
                     </span>
                    
-                    <span className=' text-balance'>
-                        <h3 className="flex items-center mb-1 text-lg font-semibold text-white mx-10">{year} <span className={`bg-thatch-green-500  text-white text-sm font-medium mx-5 ${visibility} px-3 py-0.5 rounded `}>Latest</span></h3>
+                    <div className='ml-2 lg:ml-10 text-balance'>
+                        <h3 className="flex items-center mb-1 text-lg font-semibold text-red-1 mx-10">{year} <span className={`bg-red-1  text-white text-sm font-medium mx-5 ${visibility} px-3 py-0.5 rounded-sm `}>Latest</span></h3>
                         <h4 className="block mb-2 text-lg font-normal  text-gray-300  ml-10">{title}</h4>
                         <p className="mb-4 text-base font-normal text-gray-500  ml-10">{description}</p>
-                    </span>
-                    <motion.span initial={{ opacity: 0 }} animate={controls_2} className="absolute flex items-center justify-center w-4 h-4 rounded-full mt-6 lg:mt-8 -start-3  bg-thatch-green-500"></motion.span>
+                    </div>
+                    <motion.span initial={{ opacity: 0 }} animate={controls_2} className="absolute flex items-center justify-center w-4 h-4 rounded-full mt-6 lg:mt-8 -start-2.5  bg-red-1"></motion.span>
                 </li>
             </ol>
             

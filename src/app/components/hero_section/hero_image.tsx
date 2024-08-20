@@ -37,7 +37,7 @@ const HeroImage: React.FC = () => {
     return (
     <motion.div ref={ref} initial={{ opacity: 0 }} animate={controls}  className="flex mx-0 items-center">
         <div className=' overflow-hidden'>
-            <Image className=' mt-5 sm:mt-10 md:mt-12 lg:mt-20 xl:mt-8 mx-0' alt="" height={1000} width={1000}  src={heroImage}/>
+            <Image className=' mt-5 sm:mt-10 md:mt-12 lg:mt-20 xl:mt-8 mx-0 h-auto w-max' sizes='100vW'  alt="" src={heroImage}/>
           </div>
     </motion.div>
     );

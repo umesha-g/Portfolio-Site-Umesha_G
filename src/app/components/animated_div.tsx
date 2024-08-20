@@ -40,7 +40,7 @@ const NoBorderdAnimatedDivision: React.FC<MotionContainerProps> = ({
         }, [controls,hasAnimated]);
 
     return (
-        <motion.div ref={ref} initial={{ opacity: 0 }} animate={controls} className={`${className}`}>
+        <motion.div ref={ref} initial={{ opacity: 0 }} animate={controls} className={`${className} `}>
             {children}
         </motion.div>
     );

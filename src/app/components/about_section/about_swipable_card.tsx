@@ -117,14 +117,14 @@ const SwipeableDiv: React.FC<SwipeableDivProps> = ({ skills_list }) => {
         {skills_list.map((skill, index) => (
           <motion.div
             key={index}
-            className={`${styles.aboutback} flex-shrink-0 w-full bg-bunker-900 p-6 rounded-lg shadow-md`}
+            className={` flex-shrink-0 w-full bg-neutral-600 p-6 rounded-lg shadow-md`}
             initial={{ opacity: 0, x: 20 }}
             animate={{ opacity: 1, x: 0 }}
             exit={{ opacity: 0, x: -20 }}
             transition={{ duration: 0.3 }}
           >
             <div className='lg:mx-20 ' >
-            <h4 className="text-xl text-thatch-green-500 font-semibold mb-2">{skill.name}</h4>
+            <h4 className="text-xl text-white font-semibold mb-2">{skill.name}</h4>
             <p className="mb-4  text-white ">{skill.description}</p>
             </div>
           </motion.div>

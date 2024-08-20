@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -12,41 +14,5 @@
   .text-balance {
     text-wrap: balance;
   }
-}
-
-@font-face {
-  font-family: "advent_bold";
-  src: url('./UI/fonts/advent/AdventPro-Bold.ttf');
-}
-
-@font-face {
-  font-family: "advent_thin";
-  src: url('./UI/fonts/advent/AdventPro-Light.ttf');
-}
-
-
-@font-face {
-  font-family: "genos";
-  src: url('./UI/fonts/genos/Genos-Bold.ttf');
-}
-
-@font-face {
-  font-family: "Merriweather-Bold";
-  src: url('./UI/fonts/merriw/Merriweather-Bold.ttf');
-}
-
-@font-face {
-  font-family: "Jost";
-  src: url('./UI/fonts/Jost-Medium.ttf');
-}
-
-@font-face {
-  font-family: "italianno";
-  src: url('./UI/fonts/Italianno-Regular.ttf');
-}
-
-@font-face {
-  font-family: "backto";
-  src: url('./UI/fonts/Back\ to\ Black\ Demo.ttf');
 }
 
