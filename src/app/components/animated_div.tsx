@@ -5,7 +5,7 @@ interface MotionContainerProps extends React.HTMLAttributes<HTMLDivElement> {
     children: React.ReactNode;
   }
 
-const NoBorderdAnimatedDivision: React.FC<MotionContainerProps> = ({
+const AnimatedDivision: React.FC<MotionContainerProps> = ({
     children,
     className,
     ...props
@@ -46,4 +46,4 @@ const NoBorderdAnimatedDivision: React.FC<MotionContainerProps> = ({
     );
 };
 
-export default NoBorderdAnimatedDivision;
+export default AnimatedDivision;

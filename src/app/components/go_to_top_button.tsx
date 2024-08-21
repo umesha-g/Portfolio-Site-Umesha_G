@@ -30,7 +30,7 @@ const GoToTopButton = () => {
       {isVisible && (
         <button
           onClick={scrollToTop}
-          className="fixed bottom-5 right-5 z-50 p-3 bg-neutral-950 text-red-1 rounded-full border-2 border-red-1 shadow-lg hover:bg-neutral-800 transition-colors duration-300"
+          className="fixed lg:bottom-5 lg;right-5 bottom-3 right-3  z-50 p-2 lg:p-3 bg-neutral-950 text-red-1 rounded-full border-2 border-red-1 shadow-lg hover:bg-neutral-800 transition-colors duration-300"
           aria-label="Go to top"
         >
           <BsArrowUp size={24} />

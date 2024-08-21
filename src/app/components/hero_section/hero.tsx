@@ -1,9 +1,8 @@
 import React from 'react';
 import { AiFillGithub, AiFillLinkedin, } from 'react-icons/ai';
 import { TbBrandFiverr } from 'react-icons/tb';
-import Image from 'next/image';
 import HeroImage from './hero_image';
-import NoBorderdAnimatedDivision from '../animated_div';
+import AnimatedDivision from '../animated_div';
 
 export default function Hero() {
 
@@ -11,11 +10,11 @@ export default function Hero() {
       
         <div className='flex-col flex lg:grid lg:grid-cols-2  grid-flow-col  lg:mx-10 mx-0 '>
 
-          <NoBorderdAnimatedDivision className= 'pt-5 lg:pt-20 2xl:pt-0 mx-12 lg:ml-24 2xl:ml-44 lg:mx-20 lg:flex '>
-            <div className='mt-16 lg:mt-44 2xl:mt-80'>
+          <AnimatedDivision className= 'pt-5 lg:pt-20 2xl:pt-0 mx-12 lg:ml-24 2xl:ml-44 lg:mx-20 lg:flex '>
+            <div className='mt-24 lg:mt-44 2xl:mt-80'>
 
               <div className='text-center lg:text-left '>
-                <h3 className='text-white text-lg lg:text-xl 2xl:text-2xl -mb-4'>Hi, I am</h3>
+                <h3 className='text-white text-lg lg:text-xl 2xl:text-2xl -mb-4'>Hello there, I am</h3>
                 <h2 className='font-jost text-red-1 text-5xl font-black sm:text-6xl my-5 xl:text-7xl'>Umesha Madushan</h2>
                 <h3 className='text-white text-lg lg:text-xl 2xl:text-2xl -mt-4'>Developer and Designer <br className='lg:hidden'/> from  Sri Lanka </h3>
               </div>
@@ -31,7 +30,7 @@ export default function Hero() {
               </div>
 
             </div>
-          </NoBorderdAnimatedDivision>
+          </AnimatedDivision>
 
           <div className=' overflow-hidden'>
            
