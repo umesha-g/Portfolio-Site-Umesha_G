@@ -12,16 +12,16 @@ import styles from './Layout.module.css';
 export default function Home() {
   
   return (
-    <main className={` bg-neutral-950 font-jost text-white overflow-hidden` }>
+    <main className={`  font-jost text-white overflow-hidden` }>
     
       <GoToTopButton/>
 
-      <section id='hero_sc' className=' bg-neutral-950 min-h-screen'>
+      <section id='hero_sc' className=' bg-neutral-950  min-h-screen'>
         <Navbar />
         <Hero />
       </section>
 
-      <section id="about_sc"  className='min-h-screen bg-neutral-900'>
+      <section id="about_sc"  className='min-h-screen bg-neutral-900 '>
         <About_Section/>
       </section>
 
@@ -29,11 +29,11 @@ export default function Home() {
         <Service_Section/>
       </section>
 
-      <section id="projects_sc" className='min-h-screen bg-neutral-900 items-center '>
+      <section id="projects_sc" className='min-h-screen bg-neutral-900  items-center '>
         <Project_Section/>
       </section>
 
-      <section id="contact_sc" className='h-96 bg-neutral-950'>
+      <section id="contact_sc" className='h-96 bg-neutral-950 '>
         <Contact_Section/>
       </section>
  
