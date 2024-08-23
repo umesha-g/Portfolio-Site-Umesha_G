@@ -45,7 +45,7 @@ const config: Config = {
         'mid-gray':'#A79E9C',
         'blue-1':'#3D4D55',
         'blue-2':'#10232A',
-        'red-1':'#B51A2B',
+        'red-1':'#ff0000',
         'red-2':'#541A2E',
         'red-3' :'#BE4039',
         
@@ -64,7 +64,10 @@ const config: Config = {
 
       fontSize: {
       
-        '7xl': '7rem',
+        'ssm' : '1rem',
+        'llg': '1.35rem',
+        '6.5xl':'5.5rem',
+        '7xl': '6rem',
       }
       
     },

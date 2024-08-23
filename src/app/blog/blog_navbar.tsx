@@ -21,7 +21,7 @@ export default function BlogNavbar() {
         section.scrollIntoView({ behavior: 'smooth' });
         };
 
-        if(width<800){
+        if(width<1024){
             controls.start({ 
                 opacity: 1, y: 0, 
             });

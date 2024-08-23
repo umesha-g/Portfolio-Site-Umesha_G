@@ -16,7 +16,7 @@ export default function Home() {
     
       <GoToTopButton/>
 
-      <section id='hero_sc' className=' bg-neutral-950  min-h-screen'>
+      <section id='hero_sc' className=' bg-neutral-950 min-h-screen'>
         <Navbar />
         <Hero />
       </section>
@@ -33,7 +33,11 @@ export default function Home() {
         <Project_Section/>
       </section>
 
-      <section id="contact_sc" className='h-96 bg-neutral-950 '>
+      <section id="test_sc" className='min-h-screen bg-neutral-950  items-center '>
+        
+      </section>
+
+      <section id="contact_sc" className='h-64 bg-neutral-900 '>
         <Contact_Section/>
       </section>
  

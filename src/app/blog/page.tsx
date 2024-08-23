@@ -3,6 +3,7 @@ import GoToTopButton from '../components/go_to_top_button';
 import styles from '../Layout.module.css';
 import React from 'react';
 import BlogNavbar from './blog_navbar';
+import Contact_Section from '../components/contact_section/contact_section';
 
 export default function Blog() {
  
@@ -19,16 +20,7 @@ export default function Blog() {
             </div>
           </section>
 
-            <div className='relative'>
-              <footer className=" rounded-lg  m-4">
-                  <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
-                  <div className="sm:flex sm:items-center sm:justify-between">
-                  </div>
-                      <hr className="my-6 border-white sm:mx-auto lg:my-8" />
-                      <span className="block text-sm text-red-1 sm:text-center ">Designed By Umesha G. © 2024 All Rights Reserved.</span>
-                  </div>
-              </footer>
-            </div>
+        <Contact_Section/>
           
         </main>
       );

@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { BsArrowRight } from 'react-icons/bs';
-import heroImage from '#/assets/hero_section/hero.png';
+import heroImage1 from '#/assets/hero_section/DSC_0879.png';
+import heroImage2 from '#/assets/hero_section/DSC_08792.png';
 import Image from 'next/image';
 
 
@@ -35,9 +36,9 @@ const HeroImage: React.FC = () => {
  
 
     return (
-    <motion.div ref={ref} initial={{ opacity: 0 }} animate={controls}  className="flex mx-0 items-center">
-        <div className=' overflow-hidden'>
-            <Image className=' mt-5 sm:mt-10 md:mt-12 lg:mt-20 xl:mt-8 mx-0 h-auto w-max' sizes='100vW'  alt="" src={heroImage}/>
+    <motion.div ref={ref} initial={{ opacity: 0 }} animate={controls}  className=" mx-0 ">
+        <div className=' flex flex-col overflow-hidden'>
+            <Image className='xl:mt-24 lg:mt-40 mt-32  mx-0 opacity-100' sizes='100vw'style={{width:'100%',height:'auto'}} quality={100}  alt="" src={heroImage2}/>
           </div>
     </motion.div>
     );
