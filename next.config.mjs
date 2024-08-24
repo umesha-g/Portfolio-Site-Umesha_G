@@ -7,8 +7,16 @@ const nextConfig = {
     output: 'export',
     images:{
         unoptimized:true,
-    }
+    },
+    
+    experimental: {
+        images: {
+            allowFutureImage: true
+        }
+      },
+    
 };
+
 
 export default nextConfig;
 

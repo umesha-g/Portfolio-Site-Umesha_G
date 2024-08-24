@@ -3,17 +3,17 @@ import React, { useState, useEffect, useRef } from 'react';
 import SwipeableDiv from './about_swipable_card';
 import LinearCard from './about_linear_sliders';
 import CircularProgress from './about_circular_sliders';
-import {LinearInput,linear_skill_list} from '#/data/about_section_data/linear_skill_list';
-import {CircularSkill, circular_skill_list } from '#/data/about_section_data/circular_skill_list';
-import {TimeEvents, time_line_data } from '#/data/about_section_data/time_line_data';
+import {LinearInput,linear_skill_list} from '#/data/about_sec_data/linear_skill_list';
+import {CircularSkill, circular_skill_list } from '#/data/about_sec_data/circular_skill_list';
+import {TimeEvents, time_line_data } from '#/data/about_sec_data/time_line_data';
 import Time_Line from './about_timeline';
 import Numberload from './about_number';
 import SkillBox from './about_skill_box';
-import {Skill,skills_list} from '#/data/about_section_data/skill_box_list'
-import { linear_language_list } from '#/data/about_section_data/linear_language_list';
+import {Skill,skills_list} from '#/data/about_sec_data/skill_box_list'
+import { linear_language_list } from '#/data/about_sec_data/linear_language_list';
 import AnimatedDivision from '../animated_div';
-import { skills_list_2 } from '#/data/about_section_data/swipable_skills_list_2';
-import { skills_list_3 } from '#/data/about_section_data/swipable_skills_list_3';
+import { skills_list_2 } from '#/data/about_sec_data/swipable_skills_list_2';
+import { skills_list_3 } from '#/data/about_sec_data/swipable_skills_list_3';
 
 export default function About_Section(): JSX.Element {
 

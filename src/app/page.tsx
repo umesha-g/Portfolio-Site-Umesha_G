@@ -8,6 +8,7 @@ import About_Section from './components/about_section/about_section';
 import Project_Section from './components/project_section/project_sec';
 import Contact_Section from './components/contact_section/contact_section';
 import styles from './Layout.module.css';
+import Testimonial_Section from './components/testimonial_section/testimonial_sec';
 
 export default function Home() {
   
@@ -34,7 +35,7 @@ export default function Home() {
       </section>
 
       <section id="test_sc" className='min-h-screen bg-neutral-950  items-center '>
-        
+        <Testimonial_Section/>
       </section>
 
       <section id="contact_sc" className='h-64 bg-neutral-900 '>

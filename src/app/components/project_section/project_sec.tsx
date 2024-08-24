@@ -1,5 +1,5 @@
 import ProjectCard from '../project_section/project_card';
-import { Project, projects_list} from '#/data/projects_data/projects_list';
+import { Project, projects_list} from '#/data/projects_sec_data/projects_list';
 import React from 'react';
 import AnimatedDivision from '../animated_div';
 

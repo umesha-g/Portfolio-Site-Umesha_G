@@ -1,6 +1,6 @@
 import React,{ useState, useEffect, useRef } from 'react';
 import { ExternalLink, Github } from 'lucide-react';
-import { Project } from '#/data/projects_data/projects_list';
+import { Project } from '#/data/projects_sec_data/projects_list';
 import { motion, useAnimation } from 'framer-motion';
 import styles from './project.module.css';
 
@@ -33,12 +33,12 @@ const ProjectCard: React.FC<Project> = ({ title, description, projectUrl, github
   }, [controls,hasAnimated]); 
 
   return (
-    <motion.div className={`max-w-sm rounded-sm shadow-lg h-48 bg-neutral-600`} ref={ref} initial={{ opacity: 0, y: 50 }} animate={controls}  whileHover={{ scale: 1.05 }}>
+    <motion.div className={`max-w-sm rounded-sm shadow-lg h-48 border-2 border-neutral-600`} ref={ref} initial={{ opacity: 0, y: 50 }} animate={controls}  whileHover={{ scale: 1.05 }}>
      <div className={``}> 
       <div>{/*image*/}</div>
       <div className={` px-6 py-4`}>
         <div className="font-bold text-xl mb-2 text-white ">{title}</div>
-        <p className="text-white text-base">{description}</p>
+        <p className="text-neutral-400 text-base">{description}</p>
       </div>
       <div className="px-6 pt-4 pb-2 flex justify-between">
         <a href={projectUrl} target="_blank" rel="" className="hover:bg-red-900 bg-red-1 transition-colors duration-200 text-white font-bold py-2 px-2.5 lg:px-4 rounded-sm inline-flex items-center">

@@ -16,13 +16,13 @@ export default function Contact_Section(): JSX.Element {
 
                         <ul className="flex flex-wrap items-center mb-4 text-sm font-medium text-gray-500 sm:mb-0">
                             <li className='flex items-center'>
-                                <FaPhoneSquareAlt size={20} className='mr-2'/> <a href="tel:+94716458801" className="hover:underline me-4 md:me-6">Phone</a>
+                                <a href="tel:+94716458801" className="hover:text-red-1 me-4 md:me-6 flex"><FaPhoneSquareAlt size={20} className='mr-2'/>Phone</a>
                             </li>
                             <li className='flex items-center'>
-                                <MdEmail size={20} className='mr-2'/><a href="mailto:g.umesha.madushan@gmail.com" className="hover:underline me-4 md:me-6">E-mail</a>
+                                <a href="mailto:g.umesha.madushan@gmail.com" className="hover:text-red-1 me-4 md:me-6 flex items-center"><MdEmail size={24} className='mr-2'/>E-mail</a>
                             </li>
                             <li className='flex items-center'>
-                                <FaLinkedin size={20} className='mr-2'/> <a href="#" className="hover:underline me-4 md:me-6">Linkedin</a>
+                                <a  target="_blank" href="https://lk.linkedin.com/in/umeshag" className="hover:text-red-1 me-4 md:me-6 flex"><FaLinkedin size={20} className='mr-2'/> Linkedin</a>
                             </li>
                         </ul>
                     </div>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import {Skill,skills_list} from '#/data/about_section_data/skill_box_list'
+import {Skill,skills_list} from '#/data/about_sec_data/skill_box_list'
 import { motion, useAnimation } from 'framer-motion';
 
 
@@ -33,7 +33,7 @@ const SkillBox: React.FC<Skill> = ({ name, description, bgcolor }) => {
 
 
     return (
-      <motion.div ref={ref} initial={{ opacity: 0 , y:10}} animate={controls} className={`${bgcolor} xl:h-64 my-3 lg:mx-5 lg:w-svw  p-8 rounded-sm`} >
+      <motion.div ref={ref} initial={{ opacity: 0 , y:10}} animate={controls} className={`${bgcolor}   border-t-2 xl:h-64 my-3 lg:mx-5 lg:w-svw  p-8 rounded-sm`} >
           
           <h1 className='text-2xl font-bold'>{name}</h1>
           <p className='mt-4'>{description}</p>

@@ -14,3 +14,17 @@
     background-position: right top;
   }
 }
+
+.images {
+
+    height: auto;
+    width: 100%;
+
+}
+
+@media (min-width: 1290px) {
+  .images{
+    width:90 ;
+
+  }
+}

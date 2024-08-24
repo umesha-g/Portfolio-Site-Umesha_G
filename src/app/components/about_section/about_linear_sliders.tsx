@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, useAnimation } from 'framer-motion';
-import { LinearInput } from '#/data/about_section_data/linear_skill_list';
+import { LinearInput } from '#/data/about_sec_data/linear_skill_list';
 
   const LinearCard: React.FC<LinearInput> = ({ name, Level }) => {
     const controls = useAnimation();

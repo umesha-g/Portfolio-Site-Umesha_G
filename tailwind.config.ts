@@ -66,7 +66,11 @@ const config: Config = {
       
         'ssm' : '1rem',
         'llg': '1.35rem',
-        '6.5xl':'5.5rem',
+        '2.5xl':'1.7rem',
+        '3.5xl':'1.7rem',
+        '4.5xl':'1.8rem',
+        '4.6xl':'2rem',
+        '6.5xl':'4.5rem',
         '7xl': '6rem',
       }
       

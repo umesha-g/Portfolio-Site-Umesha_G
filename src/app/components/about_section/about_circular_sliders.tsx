@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, useAnimation } from 'framer-motion';
-import { CircularSkill } from '#/data/about_section_data/circular_skill_list';
+import { CircularSkill } from '#/data/about_sec_data/circular_skill_list';
 
 const CircularProgress: React.FC<CircularSkill> = ({ name, percentage }) => {
   const controls = useAnimation();

@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { motion, useAnimation } from 'framer-motion';
-import { TimeEvents } from '#/data/about_section_data/time_line_data';
+import { TimeEvents } from '#/data/about_sec_data/time_line_data';
 
 const TimelineItem: React.FC<TimeEvents> = ({ year, title, description,visibility,Icon}) => {
     const controls = useAnimation();
@@ -37,7 +37,7 @@ const TimelineItem: React.FC<TimeEvents> = ({ year, title, description,visibilit
   return (
     <motion.div ref={ref} initial={{ opacity: 0, y: -10 }} animate={controls}  className="  ">
         <div className="order-1  border-0 rounded-lg   lg:px-6 ">
-            <ol className="relative border-l-4  ml-5 pb-3 h-auto lg:pb-5 border-neutral-300 ">                  
+            <ol className="relative border-l-2  ml-5 pb-3 h-auto lg:pb-5 border-neutral-300 ">                  
                 <li className=" mx-3 pb-3">            
                     <span className="absolute flex items-center justify-center w-10 h-10 rounded-full -start-5 bg-red-1">
                         <Icon color='black' size='20' /> 

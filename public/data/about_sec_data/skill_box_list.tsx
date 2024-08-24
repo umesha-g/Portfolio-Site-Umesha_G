@@ -9,30 +9,30 @@ export const skills_list: Skill[] = [
         name: 'JavaScript',
         description:
             '...',
-            bgcolor :'bg-neutral-600'
+            bgcolor :'border-neutral-600 '
     },
     {
         name: 'Java',
         description:
             '...',
-        bgcolor :'bg-red-1'
+        bgcolor :'border-red-1'
     },
     {
         name: 'C',
         description:
             '...',
-            bgcolor :'bg-neutral-600'
+            bgcolor :'border-neutral-600'
     },
     {
         name: 'Python',
         description:
             '...',
-            bgcolor :'bg-neutral-600'
+            bgcolor :'border-neutral-600'
         },
     {
         name: 'MySQL',
         description:
             '...',
-            bgcolor :'bg-neutral-600'
+            bgcolor :'border-neutral-600'
     },
   ];
