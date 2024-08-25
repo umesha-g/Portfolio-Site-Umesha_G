@@ -1,5 +1,6 @@
 
-import user from "#/data/Test_sec_data/Images/defaultuser.png"
+import user from "#/data/Test_sec_data/Images/defaultuser.png";
+import ckumara2 from '#/data/Test_sec_data/Images/asx3exir.bmp';
 
 export interface Testimonial {
   name: string;
@@ -7,15 +8,45 @@ export interface Testimonial {
   star: [string,string,string,string,string];
   feedback: string;
   from:string;
+  link:string;
 }
 
 export const test_list: Testimonial[] = [
   {
-    name: "client Name",
+    name: "mrdouglas852",
     image: user,
-    star: ['text-yellow-300','text-yellow-300','text-yellow-300','text-yellow-300','text-neutral-400'],
-    feedback: "feedback",
-    from : "Fiverr"
+    star: ['text-red-1','text-red-1','text-red-1','text-red-1','text-red-1'],
+    feedback: "Exceeding expectations. This designer will work with you every step of the way. Extremely responsive and polite and willing to go that extra mile to get the jon done. Highly recommend to anyone looking for a logo or creative design project.",
+    from : "Fiverr",
+    link:'https://www.fiverr.com/umesha_g'
   },
+
+  {
+    name: "rjwmauldin",
+    image: user,
+    star: ['text-red-1','text-red-1','text-red-1','text-red-1','text-red-1'],
+    feedback: "Very quick work, really looked at my data points and made them come alive. Followed all my requests and created a wonderful piece for my needs.",
+    from : "Fiverr",
+    link:'https://www.fiverr.com/umesha_g'
+  },
+
+  {
+    name: "warren_01",
+    image: user,
+    star: ['text-red-1','text-red-1','text-red-1','text-red-1','text-red-1'],
+    feedback: "Fantastic work. Very quick and responsive to directions. Will work with the seller again.",
+    from : "Fiverr",
+    link:'https://www.fiverr.com/umesha_g'
+  },
+
+  {
+    name: "ckumara2",
+    image: ckumara2,
+    star: ['text-red-1','text-red-1','text-red-1','text-red-1','text-red-1'],
+    feedback: "Great & fast service. Looking forward to connect with more projects Thanks.",
+    from : "Fiverr",
+    link:'https://www.fiverr.com/umesha_g'
+  },
+
 
 ];

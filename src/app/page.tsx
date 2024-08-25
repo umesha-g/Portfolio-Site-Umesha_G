@@ -34,14 +34,11 @@ export default function Home() {
         <Project_Section/>
       </section>
 
-      <section id="test_sc" className='min-h-screen bg-neutral-950  items-center '>
+      <section id="test_sc" className='min-h-screen relative bg-neutral-950  items-center '>
         <Testimonial_Section/>
-      </section>
-
-      <section id="contact_sc" className='h-64 bg-neutral-900 '>
         <Contact_Section/>
       </section>
- 
+
     </main>
   );
 }

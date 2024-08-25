@@ -40,8 +40,8 @@ export default function Navbar() {
   };
 
   return (
-    <div className="relative z-50">
-      <nav className={` bg-neutral-950 fixed top-0 left-0 right-0 pl-10 xl:pr-5 2xl:pr-10 py-2 items-center content-center lg:py-3 2xl:py-4 flex justify-between z-10`}>
+      <nav className={`z-50 bg-neutral-950 fixed top-0 left-0 right-0 pl-10 xl:pr-5 2xl:pr-10 py-2 items-center content-center lg:py-3 2xl:py-4 flex justify-between`}>
+        
         <div className="flex justify-start mb-2 lg:mb-0 ml-3 lg:ml-14">
           <h1 className="text-2xl lg:text-3xl 2xl:text-3xl font-black font-jost mr-2 text-red-1">
             <Link href="/" onClick={Reload}>UMESHA</Link>
@@ -68,9 +68,6 @@ export default function Navbar() {
           </ul>
         </div>
 
-      </nav>
-
-    </div>
-      
+      </nav>     
   );
 }

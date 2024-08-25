@@ -13,7 +13,7 @@ export default function Hero() {
       
         <div className='grid lg:grid-cols-2 grid-cols-1 lg:mx-10 mx-0 '>
 
-          <AnimatedDivision className= 'pt-5 lg:pt-10 xl:pt-0 2xl:pt-14 mx-12 lg:ml-24 2xl:ml-44  lg:flex '>
+          <AnimatedDivision className= 'pt-5 lg:pt-10 xl:pt-0 2xl:pt-2 mx-12 lg:ml-24 2xl:ml-44  lg:flex '>
             <div className='mt-24 lg:mt-44 2xl:mt-80'>
 
               <div className='text-center lg:text-left '>

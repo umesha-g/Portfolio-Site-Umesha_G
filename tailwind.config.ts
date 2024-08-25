@@ -63,7 +63,7 @@ const config: Config = {
       },
 
       fontSize: {
-      
+        'sssm' : '0.7rem',
         'ssm' : '1rem',
         'llg': '1.35rem',
         '2.5xl':'1.7rem',
