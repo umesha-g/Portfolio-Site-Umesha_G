@@ -8,19 +8,20 @@ import Contact_Section from '../components/contact_section/contact_section';
 export default function Blog() {
  
     return (
-        <main className={` bg-neutral-950 font-jost min-h-screen text-white overflow-hidden` }>
+        <main className={` bg-neutral-950 font-jost  text-white overflow-hidden` }>
           <GoToTopButton/>
           <BlogNavbar/>
-          <section className='min-h-screen text-center items-center justify-center  flex '>
+          <section className='min-h-screen text-center items-center justify-center flex '>
             
 
             <div className=''>
               <h1 className='text-white'>Comming Soon...</h1>
-
             </div>
+            
+            <Contact_Section/>
           </section>
 
-        <Contact_Section/>
+        
           
         </main>
       );

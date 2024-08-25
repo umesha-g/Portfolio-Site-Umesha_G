@@ -55,7 +55,7 @@ export default function Service_Section() {
                                 </div>
                                 <p className='text-lg text-neutral-400'>
                                     With a strong foundation in various programming languages and frameworks, the commitment is to create scalable
-                                    applications that enhance user experiences and meet unique client requirements. Each project is approached with a focus
+                                    applications that enhance user experiences. Each project is approached with a focus
                                     on quality and impact.
                                 </p>
                                 </div>
