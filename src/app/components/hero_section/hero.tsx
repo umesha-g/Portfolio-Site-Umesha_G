@@ -5,7 +5,6 @@ import AnimatedDivision from '../animated_div';
 import heroImage1 from '#/assets/hero_section/DSC_08791114414.png';
 import heroImage2 from '#/assets/hero_section/DSC_087911165858.png';
 import Image from 'next/image';
-import styles from './hero.module.css';
 
 export default function Hero() {
 

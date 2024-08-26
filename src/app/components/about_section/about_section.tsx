@@ -28,7 +28,7 @@ export default function About_Section(): JSX.Element {
         <AnimatedDivision className='grid xl:grid-cols-5 grid-cols-1 '>
           <div className='text-center items-center pb-12 px-3 lg:p-16 text-lg lg:text-xl font-light text-balance col-span-2'>
               <h1 className='text-3xl text-neutral-600 font-bold mt-2 mb-5 lg:mt-32 lg:mb-16'> I AM, </h1>
-              <p className='text-llg'> an Enthusiastic Science undergraduate with a strong foundation in programming and system design. Adept at managing end-to-end project Lifecycles and crafting innovative solutions. Eager to contribute to the software industry by leveraging analytical thinking and a passion for problem-solving.
+              <p className='text-base lg:leading-7 lg:text-llg'> an Enthusiastic Science undergraduate with a strong foundation in programming and system design. Adept at managing end-to-end project Lifecycles and crafting innovative solutions. Eager to contribute to the software industry by leveraging analytical thinking and a passion for problem-solving.
             </p>
             <div className='flex mt-20'>
               <div className='w-svw'>

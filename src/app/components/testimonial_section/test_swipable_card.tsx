@@ -4,13 +4,14 @@ import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 import { MdKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from 'react-icons/md';
 import user from "#/data/Test_sec_data/Images/defaultuser.png";
 import Image from 'next/image';
+import { SiFiverr } from "react-icons/si";
 
 export interface Testimonial {
   name: string;
   image: typeof user;
   star: [string,string,string,string,string];
   feedback: string;
-  from:string;
+  from: typeof SiFiverr;
   link:string;
 }
 
@@ -109,33 +110,27 @@ const SwipeableDiv: React.FC<SwipeableDivProps> = ({ test_list }) => {
   }, [controls ,hasAnimated]); 
 
   return (
-    <motion.div animate={controls} ref={ref} initial={{ opacity: 0, y: 30 }} className={`lg:p-5 py-3 relative overflow-hidden`}>
-      <div
-        ref={containerRef}
-        className="flex transition-transform duration-300 ease-in-out"
-        style={{ transform: `translateX(-${currentTest * 100}%)` }}
+    <motion.div animate={controls} ref={ref} initial={{ opacity: 0, y: 30 }} className={`lg:px-5 lg;pb-5 py-3 relative overflow-hidden`}>
+      <div ref={containerRef} className="flex transition-transform duration-300 ease-in-out" style={{ transform: `translateX(-${currentTest * 100}%)` }}
         onMouseDown={handleMouseDown}
         onTouchStart={handleTouchStart}
         onTouchMove={handleTouchMove}
         onTouchEnd={handleTouchEnd}
       >
+        
         {test_list.map((testimonial, index) => (
 
-          <motion.div
-            key={index}
-            className={` flex-shrink-0 w-full py-3 lg:p-5 `}
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            exit={{ opacity: 0, x: -20 }}
+          <motion.div className={` flex-shrink-0 w-full py-3 lg:px-5 `} initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }}  exit={{ opacity: 0, x: -20 }}
+            key={index} 
             transition={{ duration: 0.3 }}
           >
-            <div className='lg:mx-10 p-5' >
+            <div className='lg:mx-10 px-5 pb-5' >
             <figure className="max-w-screen-md mx-auto text-center item-center place-content-center flex-col flex">
                 <svg className="w-8 h-8 mx-auto mb-3 text-neutral-700" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 18 14">
                     <path d="M6 0H2a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3H2a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Zm10 0h-4a2 2 0 0 0-2 2v4a2 2 0 0 0 2 2h4v1a3 3 0 0 1-3 3h-1a1 1 0 0 0 0 2h1a5.006 5.006 0 0 0 5-5V2a2 2 0 0 0-2-2Z"/>
                 </svg>
                 <blockquote>
-                    <p className="text-xl italic font-light text-neutral-300">{testimonial.feedback}</p>
+                    <p className="text-lg lg:text-xl italic font-light text-neutral-300">{testimonial.feedback}</p>
                 </blockquote>
                 <div className="flex items-center self-center mt-3">
                     <svg className={`w-5 h-5 ${testimonial.star[0]}`} aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
@@ -157,9 +152,9 @@ const SwipeableDiv: React.FC<SwipeableDivProps> = ({ test_list }) => {
                 
                 <figcaption className="flex items-center justify-center mt-3 space-x-3 ">
                     <Image className="w-8 h-8 p-1 rounded-full ring-neutral-400 ring-1" src={testimonial.image} sizes='100vw' quality={100}  alt="profile picture"/>
-                    <div className="flex items-center divide-x-2  divide-gray-500 ">
-                        <cite className="pe-3 font-medium text-white ">{testimonial.name}</cite>
-                        <cite className="ps-3 text-md text-neutral-500 "><a href={testimonial.link} target='_blank'>{testimonial.from}</a></cite>
+                    <div className="flex items-center  divide-neutral-400 ">
+                        <h1 className="pe-3 text-base lg:text-lg border-r-2 border-neutral-500 font-medium text-white ">{testimonial.name}</h1>
+                        <h1 className="ps-3  text-neutral-500 "><a href={testimonial.link} target='_blank'><testimonial.from size={50}/></a></h1>
                     </div>
                 </figcaption>
             </figure>
@@ -184,7 +179,7 @@ const SwipeableDiv: React.FC<SwipeableDivProps> = ({ test_list }) => {
           <button
             key={index}
             onClick={() => setCurrentTest(index)}
-            className={`w-3 h-3 rounded-full ${index === currentTest ? 'bg-bunker-950' : 'bg-gray-300'}`}
+            className={`w-3 h-3 rounded-full ${index === currentTest ? 'bg-red-1' : 'bg-neutral-300'}`}
           />
         ))}
       </div>

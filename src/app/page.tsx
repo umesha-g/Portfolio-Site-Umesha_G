@@ -30,7 +30,7 @@ export default function Home() {
         <Service_Section/>
       </section>
 
-      <section id="projects_sc" className='min-h-screen bg-neutral-900  items-center '>
+      <section id="projects_sc" className='min-h-screen  bg-neutral-900  items-center '>
         <Project_Section/>
       </section>
 
