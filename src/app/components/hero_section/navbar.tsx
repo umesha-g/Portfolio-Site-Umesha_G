@@ -4,7 +4,7 @@ import { HiMenu, HiX } from 'react-icons/hi';
 import { motion, useAnimation } from 'framer-motion';
 import useWindowWidth from '../window_width_listener';
 import styles from './hero.module.css'
-import logo from "#/assets/Logo.svg"
+import logo from "#/assets/Asset 4.svg"
 import Image from 'next/image';
 
 
@@ -44,12 +44,11 @@ export default function Navbar() {
   return (
       <nav className={`z-50 bg-neutral-950 fixed top-0 left-0 right-0 pl-10 xl:pr-5 2xl:pr-10 py-2 items-center content-center lg:py-3 2xl:py-4 flex justify-between`}>
         
-        <div className="flex justify-start mb-2 lg:mb-0 ml-5 lg:ml-28">
-          <Link href="/" onClick={Reload}><Image width={45} className='text-red-1' alt="" src={logo}/></Link>
+        <div className="flex relative items-center justify-start mb-2 lg:mb-0 -ml-12 sm:-ml-0 lg:ml-14 xl:ml-20 2xl:ml-24 mt-1 lg:mt-0">
+          <Link href="#" onClick={Reload} ><Image className='h-7 lg:h-9 p-0 m-o' height={45}  alt="" src={logo}/></Link>
         </div>
         
         <Link href="#" onClick={toggleMenu_sectionScroll}> <HiMenu size={30} className="lg:hidden items-center text-3xl mr-10 sm:mr-20 text-red-1" /></Link>
-        
 
         <div ref={ref} className={`lg:flex ${isMenuOpen ? 'block' : 'hidden'} border-l-8 lg:border-0 border-red-1 2xl:text-lg justify-end absolute top-0 lg:static left-0 w-full bg-neutral-950 `}>
           <ul className={` flex flex-col lg:mr-24 lg:flex-row text-center min-h-screen lg:min-h-0 items-center justify-center h-full text-white  bg-neutral-950 `}>

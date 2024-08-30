@@ -3,6 +3,8 @@ import React,{ useEffect, useRef, useState } from 'react';
 import { HiMenu, HiX } from 'react-icons/hi';
 import { delay, motion, useAnimation } from 'framer-motion';
 import useWindowWidth from '../components/window_width_listener';
+import Image from 'next/image';
+import logo from "#/assets/Asset 4.svg"
 
 export default function BlogNavbar() {
     const [isMenuOpen, setIsMenuOpen,] = useState(false);
@@ -32,19 +34,10 @@ export default function BlogNavbar() {
     };
 
     return (
-
-        <div className="relative z-50">
-        <nav className="bg-neutral-950 fixed top-0 left-0 right-0 pl-10 xl:pr-5 2xl:pr-10 py-2 items-center lg:py-3 2xl:py-4 flex justify-between z-10">
-            <div className="flex justify-start mb-2 lg:mb-0 ml-3 md:ml-14">
-            <h1 className="text-2xl lg:text-3xl 2xl:text-3xl font-black font-jost mr-2 text-red-1">
-                <Link href="/" >UMESHA</Link>
-            </h1>
-            <h1 className="text-2xl lg:text-3xl 2xl:text-3xl font-jost mr-2 text-red-1">
-                <Link href="/" >G</Link>
-            </h1>
-            <h1 className="text-2xl lg:text-3xl 2xl:text-3xl font-jost mr-2 text-red-1">
-                <Link href="/" >.</Link>
-            </h1>
+ 
+        <nav className="bg-neutral-950 z-50 fixed top-0 left-0 right-0 pl-10 xl:pr-5 2xl:pr-10 py-2 items-center lg:py-3 2xl:py-4 flex justify-between ">
+            <div className="flex relative items-center justify-start mb-2 lg:mb-0 -ml-12 sm:-ml-0 lg:ml-14 xl:ml-20 2xl:ml-24 mt-1 lg:mt-0">
+                <Link href="/"><Image className='h-7 lg:h-9 p-0 m-o' height={45}  alt="" src={logo}/></Link>
             </div>
             
             <Link href="#" onClick={toggleMenu_sectionScroll}> <HiMenu size={30} className="md:hidden items-center text-3xl mr-10 sm:mr-20 text-red-1" /></Link>
@@ -56,7 +49,6 @@ export default function BlogNavbar() {
             </ul>
             </div>
         </nav>
-        </div>
 
     );
 }

@@ -35,7 +35,7 @@ export default function Hero() {
           </AnimatedDivision>
 
           <AnimatedDivision className='container justify-self-center object-contain '>
-            <div className='xl:relative ml-10 xl:ml-0'>
+            <div className='xl:relative ml-10 xl:ml-0 '>
             <Image className='w-10/12 h-auto lg:w-5/12 xl:w-4/5  absolute xl:ml-10 2xl:ml-10 mt-10  lg:mt-40 xl:mt-20 2xl:mt-36  justify-self-center sm:px-10 md:px-20 lg:px-0  self-center ' sizes='100vw' quality={100}  alt="" src={heroImage1}/>
             <Image className='w-10/12 h-auto lg:w-5/12 xl:w-4/5  absolute xl:ml-10 2xl:ml-10 mt-10  lg:mt-40 xl:mt-20 2xl:mt-36  justify-self-center sm:px-10 md:px-20 lg:px-0  self-center  ease-in-out duration-500 delay-100 transition-opacity opacity-0 hover:opacity-100 ' sizes='100vw' quality={100}  alt="" src={heroImage2}/>
             

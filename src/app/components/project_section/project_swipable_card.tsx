@@ -4,11 +4,13 @@ import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 import { MdKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from 'react-icons/md';
 import styles from './swipable.module.css';
 import { ExternalLink, Github } from 'lucide-react';
+import Image from 'next/image';
+import RSMSimage from './Images/RSMS.jpg'
 
 interface Project {
   title: string;
   description: string;
-  //imageUrl: string;
+  image: typeof RSMSimage;
   projectUrl:[string,string];
   githubUrl: string;
 }
@@ -108,7 +110,7 @@ const ProjectSwipeableDiv: React.FC<SwipeableDivProps> = ({ projects_list }) => 
   }, [controls ,hasAnimated]); 
 
   return (
-    <motion.div className={`lg:p-5 py-3 relative overflow-hidden`} animate={controls} ref={ref} initial={{ opacity: 0, y: 50 }} >
+    <motion.div className={`lg:px-5 py-3 relative overflow-hidden`} animate={controls} ref={ref} initial={{ opacity: 0, y: 50 }} >
       <div ref={containerRef} className="flex transition-transform duration-300 ease-in-out" style={{ transform: `translateX(-${currentProject * 100}%)` }}
         onMouseDown={handleMouseDown}
         onTouchStart={handleTouchStart}
@@ -118,16 +120,16 @@ const ProjectSwipeableDiv: React.FC<SwipeableDivProps> = ({ projects_list }) => 
 
         {projects_list.map((project, index) => (
 
-          <motion.div className={` flex-shrink-0 w-full py-3 lg:p-5 `} initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }}
+          <motion.div className={` flex-shrink-0 w-full py-3 lg:px-5 `} initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} exit={{ opacity: 0, x: -20 }}
             key={index}
             transition={{ duration: 0.3 }}
           >
-            <div className='lg:mx-10 p-5' >
+            <div className='lg:mx-10 px-5' >
               <div className='max-w-screen-md mx-auto text-center item-center place-content-center flex flex-col'>
-                <div>{/*project.image*/}</div>
+                <div className='flex items-center place-content-center mb-5'><Image alt=""  src={project.image} height={100} width={550} sizes='100vw' style={{objectFit:'contain'}} quality={100}></Image></div>
                 <div className={'flex flex-col justify-center text-center'}>
-                  <div className="font-bold text-2xl mb-3 text-white ">{project.title}</div>
-                  <p className="text-neutral-300 font-light text-lg lg:text-xl">{project.description}</p>
+                  <div className="font-bold  sm:text-lg lg:text-2xl mb-3 text-white ">{project.title}</div>
+                  <p className="text-neutral-200 lg:font-light lg:text-xl">{project.description}</p>
                 </div>
 
                 <div className="px-6 pt-6 pb-4 place-content-center flex flex-col lg:flex-row ">

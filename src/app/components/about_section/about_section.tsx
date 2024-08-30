@@ -18,29 +18,29 @@ import { skills_list_3 } from '#/data/about_sec_data/swipable_skills_list_3';
 export default function About_Section(): JSX.Element {
 
   return (
-    <div className=" lg:py-28 py-20">
+    <div className=" pb-14 lg:pt-28 pt-20">
       <div className="container mx-auto px-4 overflow-hidden">
         <AnimatedDivision>
-          <h2 className="lg:text-6xl text-4xl font-bold mb-20 lg:mb-0 text-center lg:text-left text-red-1">About Me</h2>
+          <h2 className="2xl:text-6xl lg:text-5xl text-4xl font-bold mb-14 lg:mb-0 text-center lg:text-left text-red-1">About Me</h2>
         </AnimatedDivision>
        {/*<Numberload Number={1000} />*/}
 
         <AnimatedDivision className='grid xl:grid-cols-5 grid-cols-1 '>
-          <div className='text-center items-center pb-12 px-3 lg:p-16 text-lg lg:text-xl font-light text-balance col-span-2'>
-              <h1 className='text-3xl text-neutral-600 font-bold mt-2 mb-5 lg:mt-32 lg:mb-16'> I AM, </h1>
-              <p className='text-base lg:leading-7 lg:text-llg'> an Enthusiastic Science undergraduate with a strong foundation in programming and system design. Adept at managing end-to-end project Lifecycles and crafting innovative solutions. Eager to contribute to the software industry by leveraging analytical thinking and a passion for problem-solving.
+          <div className='text-center items-center pb-12 px-3 lg:p-12 text-lg lg:text-xl  text-balance col-span-2'>
+              <h1 className='text-2xl lg:text-3xl text-neutral-500 font-bold mt-2 mb-5 lg:mt-32 lg:mb-16'> I AM, </h1>
+              <p className='text-base lg:leading-7 lg:font-light lg:text-llg px-4'> an Enthusiastic Science undergraduate with a strong foundation in programming and system design. Adept at managing end-to-end project Lifecycles and crafting innovative solutions. Eager to contribute to the software industry by leveraging analytical thinking and a passion for problem-solving.
             </p>
-            <div className='flex mt-20'>
+            <div className='flex mt-14 lg:mt-20'>
               <div className='w-svw'>
-                <h5 className='text-neutral-400 text-ssm mb-2 leading-6'> Number Of <br/>Clients</h5>
+                <h5 className='text-neutral-400 text-sm lg:text-ssm mb-2 leading-6'> Number Of <br/>Clients</h5>
                 <Numberload Number={67}/>
               </div>
               <div className='w-svw'>
-                <h5 className='text-neutral-400 text-ssm mb-2 leading-6'>Graphic <br/>Designs</h5>
+                <h5 className='text-neutral-400 text-sm lg:text-ssm mb-2 leading-6'>Graphic <br/>Designs</h5>
                 <Numberload Number={120}/>
               </div>
               <div className='w-svw'>
-                <h5 className='text-neutral-400 text-ssm mb-2 leading-6'>Software <br/>Developments</h5>
+                <h5 className='text-neutral-400 text-sm lg:text-ssm mb-2 leading-6'>Software <br/>Developments</h5>
                 <Numberload Number={4}/>
               </div>
             </div>
@@ -56,9 +56,9 @@ export default function About_Section(): JSX.Element {
         </AnimatedDivision>
 
         <AnimatedDivision className='mt-20 p-5'>
-          <h3 className="text-2xl font-semibold  ">Technical Skills</h3>
+          <h3 className="text-2xl font-semibold mb-5 ">Technical Skills</h3>
           
-          <div className='flex lg:flex-row flex-col lg:ml-0 mt-5 lg:mt-5 lg:px-10 lg:py-20'>
+          <div className='flex lg:flex-row flex-col lg:ml-0 mt-5 pt-5 lg:pt-8 '>
             {skills_list.map((Skill: Skill, index: number) => (
                 <SkillBox key={index} {...Skill} />
             ))}
