@@ -45,7 +45,7 @@ const config: Config = {
         'mid-gray':'#A79E9C',
         'blue-1':'#3D4D55',
         'blue-2':'#10232A',
-        'red-1':'#ff0000',
+        'red-1':'#DD2010',
         'red-2':'#541A2E',
         'red-3' :'#BE4039',
         
@@ -53,13 +53,14 @@ const config: Config = {
       },
 
       fontFamily: {
-        adventbold: ['advent_bold'],
-        adventthin: ['advent_thin'],
-        genos: ['genos'],
-        Merriweather:['Merriweather-Bold'],
+
         jost:['Jost','serif'],
-        italianno:['italianno'],
-        backto:['backto'],
+        righteous:['Righteous','serif'],
+        orbitron : ['Orbitron','serif'],
+        bellota :['Bellota+Text','serif'],
+        magra : ['Magra','serif'],
+        pavanam : ['Pavanam','serif'],
+
       },
 
       fontSize: {

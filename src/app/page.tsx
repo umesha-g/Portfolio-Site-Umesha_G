@@ -13,7 +13,7 @@ import Testimonial_Section from './components/testimonial_section/testimonial_se
 export default function Home() {
   
   return (
-    <main className={`  font-jost text-white overflow-hidden` }>
+    <main className={`font-jost text-white overflow-hidden` }>
     
       <GoToTopButton/>
 
