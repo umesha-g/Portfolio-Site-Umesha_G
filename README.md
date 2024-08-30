@@ -19,4 +19,4 @@ Features
 * Interactive Animations: Engaging user experience through Framer Motion animations.
 
 Getting Started
-To view the portfolio, visit your-website-url.com. Feel free to explore my projects and get in touch for collaboration or inquiries!
+To view the portfolio, visit https://umesha-g.github.io/Portfolio-Site-Umesha_G. Feel free to explore my projects and get in touch for collaboration or inquiries!
