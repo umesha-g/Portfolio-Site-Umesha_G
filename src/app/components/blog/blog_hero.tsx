@@ -1,5 +1,8 @@
+"use client";
+
 import Link from 'next/link';
 import Image from 'next/image';
+import AnimatedDivision from '../animated_div';
 
 type Props = {
   title: string;
@@ -10,7 +13,7 @@ type Props = {
 
 const BlogHero = ({ title,  date, excerpt,  slug }: Props) => {
   return (
-    <div className="mb-8 p-14 rounded-sm border-t-2 border-red-1">
+    <AnimatedDivision className="mb-8 p-14 rounded-sm border-t-2 border-red-1">
 
       <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-6 md:mb-10">
         <div>
@@ -30,7 +33,7 @@ const BlogHero = ({ title,  date, excerpt,  slug }: Props) => {
           </div>
         </div>
       </div>
-    </div>
+    </AnimatedDivision>
   );
 };
 

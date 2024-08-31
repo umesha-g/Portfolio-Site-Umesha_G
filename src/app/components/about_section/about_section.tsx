@@ -21,13 +21,13 @@ export default function About_Section(): JSX.Element {
     <div className=" pb-14 lg:pt-28 pt-20">
       <div className="container mx-auto px-4 overflow-hidden">
         <AnimatedDivision>
-          <h2 className="2xl:text-6xl lg:text-5xl text-4xl font-bold mb-14 lg:mb-0 text-center lg:text-left text-red-1">About Me</h2>
+          <h2 className="2xl:text-6xl lg:text-5xl text-4xl font-bold mb-6 lg:mb-10 xl:mb-6 text-center lg:text-left text-red-1">About Me</h2>
         </AnimatedDivision>
        {/*<Numberload Number={1000} />*/}
 
         <AnimatedDivision className='grid xl:grid-cols-5 grid-cols-1 '>
           <div className='text-center items-center pb-12 px-3 lg:p-12 text-lg lg:text-xl  text-balance col-span-2'>
-              <h1 className='text-2xl lg:text-3xl text-neutral-500 font-bold mt-2 mb-5 lg:mt-32 lg:mb-16'> I AM, </h1>
+              <h1 className='text-2xl lg:text-3xl text-neutral-500 font-bold mt-2 mb-5 lg:mt-28 lg:mb-16'> I AM, </h1>
               <p className='text-base lg:leading-7 lg:font-light lg:text-llg px-4'> an Enthusiastic Science undergraduate with a strong foundation in programming and system design. Adept at managing end-to-end project Lifecycles and crafting innovative solutions. Eager to contribute to the software industry by leveraging analytical thinking and a passion for problem-solving.
             </p>
             <div className='flex mt-14 lg:mt-20'>

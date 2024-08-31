@@ -33,7 +33,7 @@ const SkillBox: React.FC<Skill> = ({ name, description, bgcolor }) => {
 
 
     return (
-      <motion.div ref={ref} initial={{ opacity: 0 , y:10}} animate={controls} className={`${bgcolor}  border-t-2 xl:h-64 my-6 mx-4 lg:w-10/12 lg:mx-7 pt-8 px-5 lg:px-6 rounded-sm`} >
+      <motion.div ref={ref} initial={{ opacity: 0 , y:10}} animate={controls} className={`${bgcolor}  border-t-2 xl:h-80 2xl:h-64 my-6 mx-4 lg:w-10/12 lg:mx-7 pt-8 px-5 lg:px-6 rounded-sm`} >
           
           <h1 className='text-llg font-bold text-neutral-500'>{name}</h1>
           <p className='mt-6 lg:text-xl text-white lg:font-light'>{description}</p>

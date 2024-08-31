@@ -1,5 +1,8 @@
+"use client";
+
 import Link from 'next/link';
 import Image from 'next/image';
+import AnimatedDivision from '../animated_div';
 
 type Props = {
   title: string;
@@ -10,7 +13,7 @@ type Props = {
 
 const BlogCard = ({ title,  date, excerpt, slug }: Props) => {
   return (
-    <div className="border-neutral-500 my-2 mx-2 lg:mx-3 border-t-2 rounded-sm overflow-hidden hover:border-transparent hover:bg-neutral-700 transition-colors duration-300">
+    <AnimatedDivision className="border-neutral-500 my-2 mx-2 lg:mx-3 border-t-2 rounded-sm overflow-hidden hover:border-transparent hover:bg-neutral-700 transition-colors duration-300">
       <Link href={`/blog/${slug}`}>
        {/* <div className="relative h-48 w-full">
            <Image
@@ -26,7 +29,7 @@ const BlogCard = ({ title,  date, excerpt, slug }: Props) => {
           <p className="text-neutral-300 mb-4">{excerpt}</p>
         </div>
       </Link>
-    </div>
+    </AnimatedDivision>
   );
 };
 
