@@ -23,7 +23,7 @@ const BlogCard = ({ title,  date, excerpt, slug }: Props) => {
             objectFit="cover"
           /> 
         </div>*/}
-        <div className="p-10">
+        <div className="p-10 px-8">
           <h3 className="text-xl font-semibold mb-2">{title}</h3>
           <p className="text-neutral-200 text-sm mb-4">{date}</p>
           <p className="text-neutral-300 mb-4">{excerpt}</p>

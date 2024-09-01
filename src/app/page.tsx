@@ -13,7 +13,7 @@ import Testimonial_Section from './components/testimonial_section/testimonial_se
 export default function Home() {
   
   return (
-    <main className={`font-jost text-white overflow-hidden` }>
+    <main className={`font-jost relative text-white bg-neutral-950 overflow-hidden` }>
     
       <GoToTopButton/>
 
@@ -34,10 +34,15 @@ export default function Home() {
         <Project_Section/>
       </section>
 
-      <section id="test_sc" className='min-h-screen relative bg-neutral-950  items-center '>
+      <section id="test_sc" className='h-auto 2xl:min-h-screen relative bg-neutral-950  items-center '>
         <Testimonial_Section/>
-        <Contact_Section/>
+        <div className='2xl:block hidden absolute bottom-0 left-0 right-0'>
+          <Contact_Section/>
+        </div>
       </section>
+      <div className='2xl:hidden block '>
+        <Contact_Section/>
+      </div>
 
     </main>
   );

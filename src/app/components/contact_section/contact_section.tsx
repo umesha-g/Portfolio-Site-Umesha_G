@@ -7,7 +7,7 @@ import AnimatedDivision from '../animated_div';
 export default function Contact_Section(): JSX.Element {
     return (
 
-            <footer className=" items-center absolute lg:relative 2xl:absolute bottom-0 left-0 right-0 flex pt-0 sm:pt-12 bg-neutral-900">
+            <footer className=" items-center  left-0 right-0 flex pt-0 sm:pt-12 bg-neutral-900">
                 <AnimatedDivision className="w-full max-w-screen-xl mx-auto px-8 pt-4 pb-2 md:py-8">
                     <div className="sm:flex sm:items-center sm:justify-between">
                         <p className="flex place-content-center lg:items-start mb-6 sm:mb-0 space-x-3 ">

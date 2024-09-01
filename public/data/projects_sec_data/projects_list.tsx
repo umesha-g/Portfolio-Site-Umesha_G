@@ -1,5 +1,5 @@
-import RSMSimage from './Images/RSMS.jpg'
-import PortImage from './Images/portfolio.png'
+import RSMSimage from '#/assets/project_section/RSMS.jpg'
+import PortImage from '#/assets/project_section/portfolio.png'
 
 export interface Project {
   title: string;

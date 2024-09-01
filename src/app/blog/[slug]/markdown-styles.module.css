@@ -1,0 +1,60 @@
+.markdown {
+  @apply text-sm mb-4 leading-relaxed;
+}
+
+.markdown p,
+.markdown ul,
+.markdown ol,
+.markdown blockquote {
+  @apply ml-4;
+}
+
+.markdown h2 {
+  @apply text-xl mt-10 mb-4 font-semibold leading-snug;
+}
+
+.markdown h3 {
+  @apply text-lg mt-6 mb-4 font-semibold leading-snug;
+}
+
+.markdown h4 {
+  @apply text-ssm mt-6 mb-4 font-semibold leading-snug;
+}
+
+.markdown h5 {
+  @apply text-sm text-neutral-500 mt-14 mb-0 font-semibold leading-snug;
+}
+
+@media screen and (min-width: 1024px) {
+  .markdown h2 {
+    @apply text-3xl mt-12 mb-4 font-semibold leading-snug;
+  }
+  .markdown h3 {
+    @apply text-2xl mt-8 mb-4 font-semibold leading-snug;
+  }
+  .markdown h4 {
+    @apply text-xl mt-8 mb-4 font-semibold leading-snug;
+  }
+  .markdown {
+    @apply text-base mb-4 leading-relaxed;
+  }
+}
+
+@media screen and (min-width:1280px) {
+  .markdown h2 {
+    @apply text-4xl mt-16 mb-4 font-semibold leading-snug;
+  }
+  .markdown h3 {
+    @apply text-3xl mt-12 mb-4 font-semibold leading-snug;
+  }
+  .markdown h4 {
+    @apply text-2xl mt-12 mb-4 font-semibold leading-snug;
+  }
+  .markdown {
+    @apply text-lg mb-4 leading-relaxed;
+  }
+  .markdown h5 {
+    @apply text-lg text-neutral-500 mt-14 mb-0 font-semibold leading-snug;
+  }
+  
+}

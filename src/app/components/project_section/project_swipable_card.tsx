@@ -126,7 +126,7 @@ const ProjectSwipeableDiv: React.FC<SwipeableDivProps> = ({ projects_list }) => 
           >
             <div className='lg:mx-10 px-5' >
               <div className='max-w-screen-md mx-auto text-center item-center place-content-center flex flex-col'>
-                <div className='flex items-center place-content-center mb-5'><Image alt=""  src={project.image} height={100} width={550} sizes='100vw' style={{objectFit:'contain'}} quality={100}></Image></div>
+                <div className='flex items-center place-content-center rounded-sm mb-5'><Image alt=""  src={project.image} height={100} width={550} sizes='100vw' style={{objectFit:'contain'}} quality={100}></Image></div>
                 <div className={'flex flex-col justify-center text-center'}>
                   <div className="font-bold  sm:text-lg lg:text-2xl mb-3 text-white ">{project.title}</div>
                   <p className="text-neutral-200 lg:font-light lg:text-xl">{project.description}</p>
@@ -134,11 +134,11 @@ const ProjectSwipeableDiv: React.FC<SwipeableDivProps> = ({ projects_list }) => 
 
                 <div className="px-6 pt-6 pb-4 place-content-center flex flex-col lg:flex-row ">
 
-                  <a href={project.projectUrl[1]} target="_blank" rel="" className={`hover:bg-red-900 ${project.projectUrl[0]} justify-center rounded-sm bg-red-1 m-2 transition-colors duration-200 text-white font-bold py-2 px-2.5 lg:px-4  inline-flex items-center`}>
+                  <a href={project.projectUrl[1]} target="_blank" rel="" className={`hover:bg-red-900 ${project.projectUrl[0]} justify-center rounded-sm bg-red-1 m-2 transition-colors duration-200 text-white font-bold py-2 px-2 lg:px-4  inline-flex items-center`}>
                     <ExternalLink size={16} className="mr-2" />
                     View Project
                   </a>
-                  <a href={project.githubUrl} target="_blank" rel="" className="bg-neutral-800 m-2 justify-center rounded-sm hover:bg-neutral-950 transition-colors duration-200 text-white font-bold py-2 px-2.5 lg:px-4  inline-flex items-center">
+                  <a href={project.githubUrl} target="_blank" rel="" className="bg-neutral-800 m-2 justify-center rounded-sm hover:bg-neutral-950 transition-colors duration-200 text-white font-bold py-2 px-2 lg:px-4  inline-flex items-center">
                     <Github size={16} className="mr-2" />
                     GitHub
                   </a>

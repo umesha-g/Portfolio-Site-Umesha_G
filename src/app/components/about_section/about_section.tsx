@@ -30,16 +30,16 @@ export default function About_Section(): JSX.Element {
               <h1 className='text-2xl lg:text-3xl text-neutral-500 font-bold mt-2 mb-5 lg:mt-28 lg:mb-16'> I AM, </h1>
               <p className='text-base lg:leading-7 lg:font-light lg:text-llg px-4'> an Enthusiastic Science undergraduate with a strong foundation in programming and system design. Adept at managing end-to-end project Lifecycles and crafting innovative solutions. Eager to contribute to the software industry by leveraging analytical thinking and a passion for problem-solving.
             </p>
-            <div className='flex mt-14 lg:mt-20'>
-              <div className='w-svw'>
+            <div className=' mt-14 lg:mt-20 grid grid-cols-3'>
+              <div className=''>
                 <h5 className='text-neutral-400 text-sm lg:text-ssm mb-2 leading-6'> Number Of <br/>Clients</h5>
                 <Numberload Number={67}/>
               </div>
-              <div className='w-svw'>
+              <div className=''>
                 <h5 className='text-neutral-400 text-sm lg:text-ssm mb-2 leading-6'>Graphic <br/>Designs</h5>
                 <Numberload Number={120}/>
               </div>
-              <div className='w-svw'>
+              <div className=''>
                 <h5 className='text-neutral-400 text-sm lg:text-ssm mb-2 leading-6'>Software <br/>Developments</h5>
                 <Numberload Number={4}/>
               </div>
@@ -66,48 +66,6 @@ export default function About_Section(): JSX.Element {
   
         </AnimatedDivision>
 
-        {/* <AnimatedDivision className='my-20'>
-          
-          <h3 className="text-2xl font-semibold  mb-16">Technical Skills</h3>
-
-          <div className="flex flex-wrap justify-center mb-8 grid-cols-2 lg:grid-cols-4  gap-4">
-            {circular_skill_list.map((circularSkill: CircularSkill, index: number) => (
-              <CircularProgress key={index} {... circularSkill} />
-            ))}
-          </div>
-
-          <AnimatedDivision className="mb-10 ">
-          <p className="text-lg font-semibold mt-10 mb-10">Frameworks</p>
-            <SwipeableDiv skills_list={skills_list_1} />
-          </AnimatedDivision>
-
-          <AnimatedDivision className="mb-10 ">
-          <p className="text-lg font-semibold mt-10 mb-10">Frontend Technologies</p>
-            <SwipeableDiv skills_list={skills_list_2} />
-          </AnimatedDivision>
-
-          <AnimatedDivision className="mb-10 ">
-          <p className="text-lg font-semibold mt-10 mb-10">Cloud Platforms & Databases</p>
-            <SwipeableDiv skills_list={skills_list_3} />
-          </AnimatedDivision>
-
-          <h3 className="text-2xl font-semibold mt-10 mb-16">Other Skills</h3>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
-            {linear_skill_list.map((linearSkill: LinearInput, index: number) => (
-              <LinearCard key={index} {... linearSkill} />
-            ))}
-          </div>
-
-          <h3 className="text-2xl font-semibold mt-10 mb-16">Languages</h3>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
-            {linear_language_list.map((linearLang: LinearInput, index: number) => (
-              <LinearCard key={index} {... linearLang} />
-            ))}
-          </div>
-
-        </AnimatedDivision> */}
       </div>
     </div>
   );

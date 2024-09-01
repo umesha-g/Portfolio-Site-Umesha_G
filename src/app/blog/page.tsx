@@ -43,13 +43,13 @@ export default async function BlogPage() {
   const morePosts = allPosts.slice(1)
   
   return (
-    <main className={` bg-neutral-950 font-jost min-h-screen relative text-white` }>
+    <main  className={` bg-neutral-950 font-jost min-h-screen relative text-white` }>
       
       <GoToTopButton/>
       <BlogNavbar/> 
 
-      <section className=' text-center  items-center justify-center flex '>
-          <div className="my-20 p-5 mx-5">
+      <section id="BlogHome" className=' text-center items-center justify-center flex m-5 '>
+          <div className="my-20 lg:mx-10 justify-center flex flex-col p-5 ">
             {heroPost && (
               <BlogHero
                 title={heroPost.title}
