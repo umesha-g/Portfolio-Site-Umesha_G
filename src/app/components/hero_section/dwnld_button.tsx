@@ -3,7 +3,7 @@ import React from 'react';
 const DownloadButton: React.FC = () => {
   return (
     <a
-      href="/data/Umesha_Software_Resume.pdf" 
+      href="/assets/resume/Umesha_Software_Resume.pdf" 
       download="Umesha_Software_Resume.pdf"  
       className="bg-neutral-600 text-white hover:bg-red-1 px-4 py-2 rounded 2xl:px-6 2xl:py-3 2xl:text-xl"
     >
