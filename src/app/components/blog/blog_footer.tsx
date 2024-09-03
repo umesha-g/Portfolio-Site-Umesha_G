@@ -4,13 +4,13 @@ import React from 'react';
 import { FaFacebookSquare, FaPhoneSquareAlt } from 'react-icons/fa';
 import { FaLinkedin, FaPhone } from 'react-icons/fa6';
 import { MdEmail } from 'react-icons/md';
-import AnimatedDivision from '../components/animated_div';
+import AnimatedDivision from '@/app/components/animated_div';
 
 export default function Blog_Footer(): JSX.Element {
     return (
 
-        <footer className=" items-center flex pt-0 sm:pt-12 bg-neutral-900">
-            <AnimatedDivision className="w-full max-w-screen-xl mx-auto px-8 pt-4 pb-2 md:py-8">
+        <footer className="absolute bottom-0 left-0 right-0 items-center flex pt-0 sm:pt-12 bg-neutral-900">
+            <AnimatedDivision className=" w-full max-w-screen-xl mx-auto px-8 pt-4 pb-2 md:py-8">
                 <div className="sm:flex sm:items-center sm:justify-between">
                     <p className="flex place-content-center lg:items-start mb-6 sm:mb-0 space-x-3 ">
                         <span className=" text-2xl font-semibold whitespace-nowrap text-red-1">Contact Me</span>

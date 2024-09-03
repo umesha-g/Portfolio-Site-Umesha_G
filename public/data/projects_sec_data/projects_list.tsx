@@ -12,7 +12,7 @@ export interface Project {
 export const projects_list: Project[] = [
   {
     title: 'Retail Store Management System',
-    description: 'This project developed an integrated software system to enhance retail store management, focusing on customers, stock, and employees. Key features include loyalty programs, real-time stock monitoring, and performance tracking, all within a user-friendly interface. Built primarily in Java, the system offers valuable insights and robust security. It showcases technology\'s potential to transform retail management.',
+    description: 'This project developed an integrated software system to enhance retail store management, focusing on customers, stock, and employees. Key features include loyalty programs, real-time stock monitoring, and performance tracking. Built primarily in Java.',
     image: RSMSimage,
     projectUrl: ['hidden','https://google.com'],
     githubUrl: 'https://github.com/umesha-g/retail-store-MS'

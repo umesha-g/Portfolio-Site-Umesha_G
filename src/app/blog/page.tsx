@@ -1,12 +1,12 @@
 import GoToTopButton from '../components/go_to_top_button';
 import React from 'react';
-import BlogNavbar from './blog_navbar';
+import BlogNavbar from '../components/blog/blog_navbar';
 import BlogHero from '@/app/components/blog/blog_hero';
 import BlogList from '@/app/components/blog/blog_list';
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-import Blog_Footer from './blog_footer';
+import Blog_Footer from '@/app/components/blog/blog_footer';
 
 type Post = {
   slug: string

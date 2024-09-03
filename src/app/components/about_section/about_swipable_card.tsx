@@ -1,8 +1,6 @@
 import React, { useState, useRef, useCallback, useEffect } from 'react';
 import { motion,useAnimation } from 'framer-motion';
-import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 import { MdKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from 'react-icons/md';
-import styles from './swipable.module.css';
 
 interface Skill {
   name: string;

@@ -1,8 +1,6 @@
 import React, { useState, useRef, useCallback, useEffect } from 'react';
 import { motion,useAnimation } from 'framer-motion';
-import { BsArrowLeft, BsArrowRight } from 'react-icons/bs';
 import { MdKeyboardArrowLeft, MdOutlineKeyboardArrowRight } from 'react-icons/md';
-import styles from './swipable.module.css';
 import { ExternalLink, Github } from 'lucide-react';
 import Image from 'next/image';
 import RSMSimage from './Images/RSMS.jpg'
@@ -138,7 +136,7 @@ const ProjectSwipeableDiv: React.FC<SwipeableDivProps> = ({ projects_list }) => 
                     <ExternalLink size={16} className="mr-2" />
                     View Project
                   </a>
-                  <a href={project.githubUrl} target="_blank" rel="" className="bg-neutral-800 m-2 justify-center rounded-sm hover:bg-neutral-950 transition-colors duration-200 text-white font-bold py-2 px-2 lg:px-4  inline-flex items-center">
+                  <a href={project.githubUrl} target="_blank" rel="" className="bg-neutral-800 m-2 justify-center rounded-sm hover:bg-neutral-600 transition-colors duration-200 text-white font-bold py-2 px-2 lg:px-4  inline-flex items-center">
                     <Github size={16} className="mr-2" />
                     GitHub
                   </a>

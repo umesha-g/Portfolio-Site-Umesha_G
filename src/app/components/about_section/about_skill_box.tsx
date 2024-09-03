@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import {Skill,skills_list} from '#/data/about_sec_data/skill_box_list'
+import {Skill} from '#/data/about_sec_data/skill_box_list'
 import { motion, useAnimation } from 'framer-motion';
 
 

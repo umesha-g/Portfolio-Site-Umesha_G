@@ -1,6 +1,6 @@
 import React from 'react';
-import { FaFacebookSquare, FaPhoneSquareAlt } from 'react-icons/fa';
-import { FaLinkedin, FaPhone } from 'react-icons/fa6';
+import { FaPhoneSquareAlt } from 'react-icons/fa';
+import { FaLinkedin } from 'react-icons/fa6';
 import { MdEmail } from 'react-icons/md';
 import AnimatedDivision from '../animated_div';
 

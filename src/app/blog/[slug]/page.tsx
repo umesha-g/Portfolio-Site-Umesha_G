@@ -4,8 +4,8 @@ import matter from 'gray-matter'
 import { remark } from 'remark'
 import html from 'remark-html'
 import markdownStyles from "./markdown-styles.module.css";
-import SlugNavbar from './slug_navbar'
-import { Calendar, Clock, User } from 'lucide-react';
+import SlugNavbar from '@/app/components/blog/slug_navbar'
+import { Calendar, User } from 'lucide-react';
 
 type Post = {
   slug: string

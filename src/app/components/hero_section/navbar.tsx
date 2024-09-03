@@ -1,9 +1,8 @@
 import Link from 'next/link';
-import React,{ useEffect, useRef, useState } from 'react';
+import React,{ useRef, useState } from 'react';
 import { HiMenu, HiX } from 'react-icons/hi';
 import { motion, useAnimation } from 'framer-motion';
 import useWindowWidth from '../window_width_listener';
-import styles from './hero.module.css'
 import logo from "#/assets/Asset 5.svg"
 import Image from 'next/image';
 

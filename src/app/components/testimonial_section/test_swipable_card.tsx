@@ -154,7 +154,7 @@ const SwipeableDiv: React.FC<SwipeableDivProps> = ({ test_list }) => {
                     <Image className="w-8 h-8 p-1 rounded-full ring-neutral-400 ring-1" src={testimonial.image} sizes='100vw' quality={100}  alt="profile picture"/>
                     <div className="flex items-center  divide-neutral-400 ">
                         <h1 className="pe-3 text-base lg:text-lg border-r-2 border-neutral-500 font-medium text-white ">{testimonial.name}</h1>
-                        <h1 className="ps-3  text-neutral-500 "><a href={testimonial.link} target='_blank'><testimonial.from size={50}/></a></h1>
+                        <h1 className="ps-3  text-neutral-500 hover:text-neutral-300"><a href={testimonial.link} target='_blank'><testimonial.from size={50}/></a></h1>
                     </div>
                 </figcaption>
             </figure>
