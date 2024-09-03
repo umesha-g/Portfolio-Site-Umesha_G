@@ -127,7 +127,7 @@ const ProjectSwipeableDiv: React.FC<SwipeableDivProps> = ({ projects_list }) => 
                 <div className='flex items-center place-content-center rounded-sm mb-5'><Image alt=""  src={project.image} height={100} width={550} sizes='100vw' style={{objectFit:'contain'}} quality={100}></Image></div>
                 <div className={'flex flex-col justify-center text-center'}>
                   <div className="font-bold  sm:text-lg lg:text-2xl mb-3 text-white ">{project.title}</div>
-                  <p className="text-neutral-200 lg:font-light lg:text-xl">{project.description}</p>
+                  <p className="text-neutral-200 lg:font-light lg:text-md xl:text-lg 2xl:text-xl">{project.description}</p>
                 </div>
 
                 <div className="px-6 pt-6 pb-4 place-content-center flex flex-col lg:flex-row ">

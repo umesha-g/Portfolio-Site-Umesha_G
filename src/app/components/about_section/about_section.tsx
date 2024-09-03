@@ -19,7 +19,7 @@ export default function About_Section(): JSX.Element {
         <AnimatedDivision className='grid xl:grid-cols-5 grid-cols-1 '>
           <div className='text-center items-center pb-12 px-3 lg:p-12 text-lg lg:text-xl  text-balance col-span-2'>
               <h1 className='text-2xl lg:text-3xl text-neutral-500 font-bold mt-2 mb-5 lg:mt-28 lg:mb-16'> I AM, </h1>
-              <p className='text-base lg:leading-7 lg:font-light lg:text-llg px-4'> an Enthusiastic Science undergraduate with a strong foundation in programming and system design. Adept at managing end-to-end project Lifecycles and crafting innovative solutions. Eager to contribute to the software industry by leveraging analytical thinking and a passion for problem-solving.
+              <p className=' lg:leading-7 lg:font-light lg:text-md xl:text-lg 2xl:text-xl px-4'> an Enthusiastic Science undergraduate with a strong foundation in programming and system design. Adept at managing end-to-end project Lifecycles and crafting innovative solutions. Eager to contribute to the software industry by leveraging analytical thinking and a passion for problem-solving.
             </p>
             <div className=' mt-14 lg:mt-20 grid grid-cols-3'>
               <div className=''>

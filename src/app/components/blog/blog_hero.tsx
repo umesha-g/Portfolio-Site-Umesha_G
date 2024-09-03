@@ -17,7 +17,7 @@ const BlogHero = ({ title,  date, excerpt,  slug }: Props) => {
 
       <Link href={`/blog/${slug}`}  className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-6 md:mb-10">
         <div>
-          <h3 className="my-4 hover:text-neutral-500 text-3xl lg:text-5xl leading-tight">
+          <h3 className="my-4 hover:text-neutral-500 text-2xl lg:text-3xl 2xl:text-4xl 2xl:5xl leading-tight">
               {title}
           </h3>
           <div className="my-4 md:mb-0 text-lg">
