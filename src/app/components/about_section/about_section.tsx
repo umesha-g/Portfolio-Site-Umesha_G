@@ -23,15 +23,15 @@ export default function About_Section(): JSX.Element {
             </p>
             <div className=' mt-14 lg:mt-20 grid grid-cols-3'>
               <div className=''>
-                <h5 className='text-neutral-400 text-sm lg:text-ssm mb-2 leading-6'> Number Of <br/>Clients</h5>
+                <h5 className='text-neutral-400 text-sm 2xl:text-base mb-2 leading-6'> Number Of <br/>Clients</h5>
                 <Numberload Number={67}/>
               </div>
               <div className=''>
-                <h5 className='text-neutral-400 text-sm lg:text-ssm mb-2 leading-6'>Graphic <br/>Designs</h5>
+                <h5 className='text-neutral-400 text-sm 2xl:text-base mb-2 leading-6'>Graphic <br/>Designs</h5>
                 <Numberload Number={120}/>
               </div>
               <div className=''>
-                <h5 className='text-neutral-400 text-sm lg:text-ssm mb-2 leading-6'>Software <br/>Developments</h5>
+                <h5 className='text-neutral-400 text-sm 2xl:text-base mb-2 leading-6'>Software <br/>Developments</h5>
                 <Numberload Number={4}/>
               </div>
             </div>
