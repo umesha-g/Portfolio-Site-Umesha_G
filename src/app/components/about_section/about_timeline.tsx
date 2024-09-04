@@ -2,7 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { TimeEvents } from '#/data/about_sec_data/time_line_data';
 
-const TimelineItem: React.FC<TimeEvents> = ({ year, title, description,visibility,Icon}) => {
+const TimelineItem: React.FC<TimeEvents> = ({ year, title,link, description,visibility,Icon}) => {
     const controls = useAnimation();
     const controls_2 = useAnimation();
     const ref = useRef<HTMLDivElement>(null);
@@ -44,9 +44,11 @@ const TimelineItem: React.FC<TimeEvents> = ({ year, title, description,visibilit
                     </span>
                    
                     <div className='ml-2 lg:ml-10 text-balance'>
-                        <h3 className="flex items-center mb-3 text-2xl lg:text-3.5xl font-bold text-red-1 mx-10">{year} <span className={`bg-red-1  text-white text-sm font-medium mx-5 ${visibility} px-3 py-0.5 rounded-sm `}>Latest</span></h3>
-                        <h4 className="block mb-0 text-md lg:text-lg font-normal  text-gray-300  ml-10">{title}</h4>
-                        <p className="mb-4 lg:text-base font-normal text-gray-500  ml-10">{description}</p>
+                        <a className={link[0]} target='_blank' href={link[1]}>
+                            <h3 className="flex items-center mb-3 text-2xl lg:text-3.5xl font-bold text-red-1 mx-10">{year} <span className={`bg-red-1  text-white text-sm font-medium mx-5 ${visibility} px-3 py-0.5 rounded-sm `}>Latest</span></h3>
+                            <h4 className="block mb-0 text-md lg:text-lg font-normal  text-gray-300  ml-10">{title}</h4>
+                            <p className="mb-4 lg:text-base font-normal text-gray-500  ml-10">{description}</p>
+                        </a>
                     </div>
                     <motion.span initial={{ opacity: 0 }} animate={controls_2} className="absolute flex items-center justify-center w-4 h-4 rounded-full mt-6 lg:mt-8 -start-2  bg-neutral-700"></motion.span>
                 </li>
