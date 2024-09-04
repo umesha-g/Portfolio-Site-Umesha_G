@@ -24,15 +24,15 @@ export default function About_Section(): JSX.Element {
             <div className=' mt-14 lg:mt-20 grid grid-cols-3'>
               <div className='flex flex-col pla place-items-center'>
                 <h5 className='text-neutral-400 text-sm 2xl:text-base mb-2 leading-6'> Number Of <br/>Clients</h5>
-                <span className='flex'><Numberload Number={67}/><h1 className='ml-2 text-3xl text-red-1 font-bold'>+</h1></span>
+                <span className='flex'><Numberload Number={67}/><h1 className='ml-2 text-xl lg:text-2xl xl:text-3xl text-red-1 font-bold'>+</h1></span>
               </div>
               <div className='flex flex-col pla place-items-center'>
                 <h5 className='text-neutral-400 text-sm 2xl:text-base mb-2 leading-6'>Graphic <br/>Designs</h5>
-                <span className='flex'><Numberload Number={120}/><h1 className='ml-2 text-3xl text-red-1 font-bold'>+</h1></span>
+                <span className='flex'><Numberload Number={120}/><h1 className='ml-2 text-xl lg:text-2xl xl:text-3xl text-red-1 font-bold'>+</h1></span>
               </div>
               <div className='flex flex-col pla place-items-center'>
                 <h5 className='text-neutral-400 text-sm 2xl:text-base mb-2 leading-6'>Software <br/>Developments</h5>
-                <span className='flex'><Numberload Number={4}/><h1 className='ml-2 hidden text-3xl text-red-1 font-bold'>+</h1></span>
+                <span className='flex'><Numberload Number={4}/><h1 className='ml-2 hidden text-xl lg:text-2xl xl:text-3xl text-red-1 font-bold'>+</h1></span>
               </div>
             </div>
 

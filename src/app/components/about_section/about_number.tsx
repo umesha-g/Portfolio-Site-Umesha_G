@@ -36,7 +36,7 @@ const Numberload: React.FC<Number> = ({ Number}) => {
 
   return (
     <div ref={ref}>
-        <motion.h1  className="text-2xl lg:text-4xl font-bold text-red-1">
+        <motion.h1  className="text-2xl lg:text-3xl xl:text-4xl font-bold text-red-1">
           {rounded}
         </motion.h1>
     </div>
