@@ -19,7 +19,7 @@ export default function Home() {
     let newHeightSty = 'min-h-screen';
     
     if (orientation === 'portrait-primary') {
-      newHeightSty = 'min-h-screen md:min-h-fit md:h-96 xl:mb-16 lg:h-[40rem]';
+      newHeightSty = 'min-h-screen md:min-h-fit md:h-96 xl:mb-16 lg:h-[40rem] xl:min-h-screen';
     } else if(orientation === 'landscape-primary')  {
       newHeightSty = 'md:min-h-screen ';
     }
