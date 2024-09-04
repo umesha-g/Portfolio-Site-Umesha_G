@@ -22,17 +22,17 @@ export default function About_Section(): JSX.Element {
               <p className=' lg:leading-7 lg:font-light lg:text-md xl:text-lg 2xl:text-xl px-4'> an Enthusiastic Science undergraduate with a strong foundation in programming and system design. Adept at managing end-to-end project Lifecycles and crafting innovative solutions. Eager to contribute to the software industry by leveraging analytical thinking and a passion for problem-solving.
             </p>
             <div className=' mt-14 lg:mt-20 grid grid-cols-3'>
-              <div className=''>
+              <div className='flex flex-col pla place-items-center'>
                 <h5 className='text-neutral-400 text-sm 2xl:text-base mb-2 leading-6'> Number Of <br/>Clients</h5>
-                <Numberload Number={67}/>
+                <span className='flex'><Numberload Number={67}/><h1 className='ml-2 text-3xl text-red-1 font-bold'>+</h1></span>
               </div>
-              <div className=''>
+              <div className='flex flex-col pla place-items-center'>
                 <h5 className='text-neutral-400 text-sm 2xl:text-base mb-2 leading-6'>Graphic <br/>Designs</h5>
-                <Numberload Number={120}/>
+                <span className='flex'><Numberload Number={120}/><h1 className='ml-2 text-3xl text-red-1 font-bold'>+</h1></span>
               </div>
-              <div className=''>
+              <div className='flex flex-col pla place-items-center'>
                 <h5 className='text-neutral-400 text-sm 2xl:text-base mb-2 leading-6'>Software <br/>Developments</h5>
-                <Numberload Number={4}/>
+                <span className='flex'><Numberload Number={4}/><h1 className='ml-2 hidden text-3xl text-red-1 font-bold'>+</h1></span>
               </div>
             </div>
 
