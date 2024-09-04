@@ -1,5 +1,5 @@
 'use client';
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Navbar from './components/hero_section/navbar';
 import Hero from './components/hero_section/hero';
 import GoToTopButton from '../app/components/go_to_top_button';
@@ -9,15 +9,30 @@ import Project_Section from './components/project_section/project_sec';
 import Contact_Section from './components/contact_section/contact_section';
 import styles from './Layout.module.css';
 import Testimonial_Section from './components/testimonial_section/testimonial_sec';
+import { useScreenOrientation } from './components/orientation_identifier';
 
 export default function Home() {
+  const [heightSty, setHeightSty] = useState<string>('min-h-screen');
+  const orientation = useScreenOrientation();
+
+  useEffect(() => {
+    let newHeightSty = 'min-h-screen';
+
+    if (orientation === 'portrait-primary') {
+      newHeightSty = 'min-h-screen md:min-h-fit md:h-96 ';
+    } else {
+      newHeightSty = 'md:min-h-screen';
+    }
+
+    setHeightSty(newHeightSty);
+  }, [orientation]);
   
   return (
-    <main className={`font-jost relative text-white bg-neutral-950 overflow-hidden` }>
+    <main className={`font-jost relative text-white  bg-neutral-950 overflow-hidden` }>
     
       <GoToTopButton/>
 
-      <section id='hero_sc' className=' bg-neutral-950 min-h-screen overflow-hidden'>
+      <section id='hero_sc' className={`${heightSty} lg:min-h-screen lg:h-auto bg-neutral-950 overflow-hidden`}>
         <Navbar />
         <Hero />
       </section>
