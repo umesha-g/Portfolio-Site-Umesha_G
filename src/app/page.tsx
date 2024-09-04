@@ -17,22 +17,24 @@ export default function Home() {
 
   useEffect(() => {
     let newHeightSty = 'min-h-screen';
-
+    
     if (orientation === 'portrait-primary') {
-      newHeightSty = 'min-h-screen md:min-h-fit md:h-96 ';
+      newHeightSty = 'min-h-screen md:min-h-fit md:h-96 xl:mb-16 lg:h-[40rem]';
     } else {
-      newHeightSty = 'md:min-h-screen';
+      newHeightSty = 'md:min-h-screen ';
     }
+    
+    window.location.reload;
 
     setHeightSty(newHeightSty);
   }, [orientation]);
   
   return (
-    <main className={`font-jost relative text-white  bg-neutral-950 overflow-hidden` }>
+    <main className={`font-jost relative text-white bg-neutral-950 overflow-hidden` }>
     
       <GoToTopButton/>
 
-      <section id='hero_sc' className={`${heightSty} lg:min-h-screen lg:h-auto bg-neutral-950 overflow-hidden`}>
+      <section id='hero_sc' className={`${heightSty} bg-neutral-950 overflow-hidden`}>
         <Navbar />
         <Hero />
       </section>

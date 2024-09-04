@@ -5,7 +5,7 @@ export default function Service_Section() {
 
     return (
         <AnimatedDivision className='lg:pt-28 pt-20 container mx-auto px-4 overflow-hidden'>
-            <h2 className='2xl:text-6xl lg:text-5xl text-4xl font-bold mb-0 lg:mb-10 xl:mb-14 text-center lg:text-left text-red-1'>Services I Offer</h2>
+            <h2 className='2xl:text-6xl lg:text-5xl text-4xl font-bold mb-6 lg:mb-10 xl:mb-6 text-center lg:text-left text-red-1'>Services I Offer</h2>
             <div className='mt-0 lg:mt-10 '>
                 <div className='gap-10 pb-20 2xl:pt-10 lg:px-16 mb-5 grid grid-cols-1 lg:grid-cols-2 m-5 '>
 
