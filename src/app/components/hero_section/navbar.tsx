@@ -19,8 +19,8 @@ export default function Navbar() {
     let newNavSty = 'my-8 ';
 
     if (orientation === 'portrait-primary') {
-      newNavSty = 'my-8 md:my-4 ';
-    } else {
+      newNavSty = 'my-8 md:my-4 lg:mt-4';
+    } else if(orientation === 'landscape-primary') {
       newNavSty = 'md:my-4 ';
     }
 

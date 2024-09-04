@@ -20,7 +20,7 @@ export default function Home() {
     
     if (orientation === 'portrait-primary') {
       newHeightSty = 'min-h-screen md:min-h-fit md:h-96 xl:mb-16 lg:h-[40rem]';
-    } else {
+    } else if(orientation === 'landscape-primary')  {
       newHeightSty = 'md:min-h-screen ';
     }
     
