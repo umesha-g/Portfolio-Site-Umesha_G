@@ -17,7 +17,7 @@ export default function Home() {
     
       <GoToTopButton/>
 
-      <section id='hero_sc' className=' bg-neutral-950 min-h-screen'>
+      <section id='hero_sc' className=' bg-neutral-950 min-h-screen overflow-hidden'>
         <Navbar />
         <Hero />
       </section>
