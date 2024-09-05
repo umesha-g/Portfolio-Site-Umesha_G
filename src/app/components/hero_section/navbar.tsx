@@ -18,9 +18,9 @@ export default function Navbar() {
   useEffect(() => {
     let newNavSty = 'my-8 ';
 
-    if (orientation === 'portrait-primary') {
+    if (orientation === 'portrait-primary' || orientation === 'portrait-secondary') {
       newNavSty = 'my-8 md:my-4 lg:mt-4';
-    } else if(orientation === 'landscape-primary') {
+    } else if(orientation === 'landscape-primary' || orientation === 'landscape-primary') {
       newNavSty = 'md:my-4 ';
     }
 

@@ -10,9 +10,9 @@ import DownloadButton from './dwnld_button';
 export default function Hero() {
   return (
     <div className="relative min-h-screen flex flex-col md:flex-row items-center overflow-hidden">
-      <div className="w-full md:w-3/5 lg:w-1/2 z-10 px-4 md:px-12 lg:px-24 2xl:px-44 py-16 md:py-0">
+      <div className="w-full md:w-3/5 lg:w-1/2 z-10 px-4 md:px-12 lg:px-24 2xl:px-44 pb-10 pt-20 md:py-0">
         <AnimatedDivision>
-          <div className="text-center lg:mt-20 md:text-left">
+          <div className="text-center mt-10 lg:mt-20 md:text-left">
             <h3 className="text-white text-lg md:text-xl lg:text-2xl">Hello there, I am</h3>
             <h2 className="font-jost text-red-1 font-black text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-6.5xl 2xl:text-7xl my-0">
               Umesha Madushan
@@ -22,7 +22,7 @@ export default function Hero() {
             </h3>
           </div>
 
-          <div className="flex pt-8 justify-center md:justify-start text-3xl lg:text-4xl text-red-1 mb-8">
+          <div className="flex lg:py-8 py-4 justify-center md:justify-start text-3xl lg:text-4xl text-red-1 ">
             <a target="_blank" href="https://www.fiverr.com/umesha_g" rel="noopener noreferrer" className="hover:text-red-800 transition-colors">
               <TbBrandFiverr />
             </a>
