@@ -18,7 +18,7 @@ export const time_line_data:TimeEvents[] = [
     {
         year: '2018',
         title: 'G.C.E. Advanced Level',
-        link: ['pointer-events-none',''],
+        link: ['pointer-events-none','#'],
         description: 'Badulla Central College',
         visibility : 'hidden',
         Icon : LiaSchoolSolid,
@@ -27,7 +27,7 @@ export const time_line_data:TimeEvents[] = [
     {
         year: '2019',
         title: 'Certificate Course in English',
-        link: ['pointer-events-none',''],
+        link: ['pointer-events-none','#'],
         description: 'Uva Wellassa University',
         visibility : 'hidden',
         Icon :PiCertificate,
@@ -36,7 +36,7 @@ export const time_line_data:TimeEvents[] = [
     {
         year: '2022',
         title: 'Certificate Course in Information Technology',
-        link: ['pointer-events-none',''],
+        link: ['pointer-events-none','#'],
         description: 'University Of Ruhuna',
         visibility : 'hidden',
         Icon : PiCertificate,
@@ -45,7 +45,7 @@ export const time_line_data:TimeEvents[] = [
     {
         year: '2023',
         title: 'Bachelor of Science Degree',
-        link: ['pointer-events-none','/'],
+        link: ['pointer-events-none','#'],
         description: 'University Of Ruhuna',
         visibility : 'hidden',
         Icon :IoSchoolOutline,
