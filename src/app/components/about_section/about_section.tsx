@@ -37,17 +37,19 @@ export default function About_Section(): JSX.Element {
             </div>
 
           </div>
-          <div className='col-span-3 lg:pl-64 p-5'>
-            <h3 className="text-2xl font-semibold  mb-14">Experience & Education</h3>
+          <div className='xl:col-span-3  p-5'>
+            <h3 className="text-2xl font-semibold text-center lg:ml-64 ml-0 lg:text-left mb-14">Experience & Education</h3>
+            <div className='lg:pl-64 md:pl-52'>
             {time_line_data.map((timeEvents: TimeEvents, index: number) => (
               <Time_Line key={index} {... timeEvents} />
             ))}
+            </div>
           </div >
 
         </AnimatedDivision>
 
         <AnimatedDivision className='mt-20 p-5'>
-          <h3 className="text-2xl font-semibold mb-5 ">Technical Skills</h3>
+          <h3 className="text-2xl font-semibold mb-5  text-center lg:text-left">Technical Skills</h3>
           
           <div className='flex lg:flex-row flex-col lg:ml-0 mt-5 pt-5 lg:pt-8 '>
             {skills_list.map((Skill: Skill, index: number) => (

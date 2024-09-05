@@ -7,36 +7,24 @@ import Service_Section from './components/service_section/service_section';
 import About_Section from './components/about_section/about_section';
 import Project_Section from './components/project_section/project_sec';
 import Contact_Section from './components/contact_section/contact_section';
-import styles from './Layout.module.css';
 import Testimonial_Section from './components/testimonial_section/testimonial_sec';
-import { useScreenOrientation } from './components/orientation_identifier';
 
 export default function Home() {
-  const [heightSty, setHeightSty] = useState<string>('min-h-screen');
-  const orientation = useScreenOrientation();
-
-  useEffect(() => {
-    let newHeightSty = 'min-h-screen';
-    
-    if (orientation === 'portrait-primary') {
-      newHeightSty = 'min-h-screen lg:min-h-fit lg:h-[26rem]';
-    } else {
-      newHeightSty = 'md:min-h-screen';
-    }
-    
-    window.location.reload;
-
-    setHeightSty(newHeightSty);
-  }, [orientation]);
   
   return (
     <main className={`font-jost relative text-white bg-neutral-950 overflow-hidden` }>
     
       <GoToTopButton/>
 
-      <section id='hero_sc' className={`${heightSty}  bg-neutral-950 overflow-hidden`}>
+      <section id='hero_sc' className={` bg-neutral-950 overflow-hidden`}>
         <Navbar />
+        <div className="w-full max-w-screen-lg mx-auto">
+          <div className="relative aspect-w-16 aspect-h-9">
+        <div className="">
         <Hero />
+        </div>
+      </div>
+    </div>
       </section>
 
       <section id="about_sc"  className='min-h-screen bg-neutral-900 '>

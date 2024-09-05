@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
     "classnames": "^2.5.1",
     "date-fns": "^3.6.0",
     "flowbite": "^2.5.1",

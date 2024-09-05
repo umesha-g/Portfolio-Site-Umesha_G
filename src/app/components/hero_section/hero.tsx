@@ -11,7 +11,7 @@ import DownloadButton from './dwnld_button';
 export default function Hero() {
   return (
     <div className="grid md:grid-cols-2 md:grid-rows-1 grid-rows-2 grid-cols-1 md:ml-10  mx-0">
-      <AnimatedDivision className="pt-5 lg:pt-28 xl:pt-0 2xl:pt-2 mx-12 lg:ml-24 2xl:ml-44 lg:flex">
+      <AnimatedDivision className="pt-5 sm:pt-10 md:pt-16 lg:pt-28 xl:pt-0 2xl:pt-2 mx-12 lg:ml-24 2xl:ml-44 lg:flex">
         <div className="mt-24 lg:mt-44 xl:mt-52 2xl:mt-96">
           <div className="text-center md:text-left">
             <h3 className="text-white text-md lg:text-lg xl:text-xl 2xl:text-2xl -mb-4">Hello there, I am</h3>
@@ -41,10 +41,10 @@ export default function Hero() {
         </div>
       </AnimatedDivision>
 
-      <AnimatedDivision className="container justify-self-center relative ">
+      <AnimatedDivision className="container justify-self-center relative mr-10">
         <div className="relative ">
         <Image
-            className="absolute h-auto w-11/12 sm:w-9/12 md:w-10/12  lg:w-10/12 xl:w-9/12 2xl:w-10/12 left-1/2 transform translate-y-16 sm:translate-y-10 md:translate-y-12 lg:translate-y-1/2 xl:translate-y-24 2xl:translate-y-32 -translate-x-1/2 transition-opacity duration-500 ease-in-out delay-100 opacity-0 hover:opacity-100"
+            className="absolute p-10 h-auto w-11/12 sm:w-9/12 md:w-10/12  lg:w-10/12 xl:w-9/12 2xl:w-10/12 left-1/2 transform translate-y-16 sm:translate-y-10 md:translate-y-12 lg:translate-y-1/2 xl:translate-y-24 2xl:translate-y-32 -translate-x-1/2 transition-opacity duration-500 ease-in-out delay-100 opacity-0 hover:opacity-100"
             sizes="100vw"
             quality={100}
             alt="Hero Image 2"
@@ -53,7 +53,7 @@ export default function Hero() {
           />
 
           <Image
-            className="absolute h-auto w-11/12 sm:w-9/12 md:w-10/12  lg:w-10/12 xl:w-9/12 2xl:w-10/12 left-1/2 transform translate-y-16 sm:translate-y-10 md:translate-y-12 lg:translate-y-1/2 xl:translate-y-24 2xl:translate-y-32 -translate-x-1/2 "
+            className="absolute p-10 h-auto w-11/12 sm:w-9/12 md:w-10/12  lg:w-10/12 xl:w-9/12 2xl:w-10/12 left-1/2 transform translate-y-16 sm:translate-y-10 md:translate-y-12 lg:translate-y-1/2 xl:translate-y-24 2xl:translate-y-32 -translate-x-1/2 "
             sizes="100vw"
             quality={100}
             alt="Hero Image 1"
