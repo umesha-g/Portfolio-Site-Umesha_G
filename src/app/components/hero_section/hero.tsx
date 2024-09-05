@@ -5,32 +5,31 @@ import AnimatedDivision from '../animated_div';
 import heroImage1 from '#/assets/hero_section/DSC_08791114414.png';
 import heroImage2 from '#/assets/hero_section/DSC_087911165858.png';
 import Image from 'next/image';
-import Link from 'next/link';
 import DownloadButton from './dwnld_button';
 
 export default function Hero() {
   return (
-    <div className="grid md:grid-cols-2 md:grid-rows-1 grid-rows-2 grid-cols-1 md:ml-10  mx-0">
-      <AnimatedDivision className="pt-5 sm:pt-10 md:pt-16 lg:pt-28 xl:pt-0 2xl:pt-2 mx-12 lg:ml-24 2xl:ml-44 lg:flex">
-        <div className="mt-24 lg:mt-44 xl:mt-52 2xl:mt-96">
-          <div className="text-center md:text-left">
-            <h3 className="text-white text-md lg:text-lg xl:text-xl 2xl:text-2xl -mb-4">Hello there, I am</h3>
-            <h2 className="font-jost text-red-1 font-black text-3xl sm:text-3xl md:text-3xl lg:text-5xl xl:text-6.5xl my-5 2xl:text-7xl">
+    <div className="relative min-h-screen flex flex-col md:flex-row items-center overflow-hidden">
+      <div className="w-full md:w-3/5 lg:w-1/2 z-10 px-4 md:px-12 lg:px-24 2xl:px-44 py-16 md:py-0">
+        <AnimatedDivision>
+          <div className="text-center lg:mt-20 md:text-left">
+            <h3 className="text-white text-lg md:text-xl lg:text-2xl">Hello there, I am</h3>
+            <h2 className="font-jost text-red-1 font-black text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-6.5xl 2xl:text-7xl my-0">
               Umesha Madushan
             </h2>
-            <h3 className="text-white text-md lg:text-lg xl:text-xl 2xl:text-2xl -mt-4">
-              Developer and Designer <br className="lg:hidden" /> from Sri Lanka
+            <h3 className="text-white text-lg md:text-xl lg:text-2xl">
+              Developer and Designer <br className="md:hidden" /> from Sri Lanka
             </h3>
           </div>
 
-          <div className="flex pt-2 justify-center md:justify-start text-2xl lg:text-3xl 2xl:text-4xl text-red-1 mb-4 2xl:mb-10">
-            <a target="_blank" href="https://www.fiverr.com/umesha_g" rel="noopener noreferrer">
+          <div className="flex pt-8 justify-center md:justify-start text-3xl lg:text-4xl text-red-1 mb-8">
+            <a target="_blank" href="https://www.fiverr.com/umesha_g" rel="noopener noreferrer" className="hover:text-red-800 transition-colors">
               <TbBrandFiverr />
             </a>
-            <a target="_blank" href="https://lk.linkedin.com/in/umeshag" rel="noopener noreferrer">
-              <AiFillLinkedin className="mx-6" />
+            <a target="_blank" href="https://lk.linkedin.com/in/umeshag" rel="noopener noreferrer" className="mx-8 hover:text-red-800 transition-colors">
+              <AiFillLinkedin />
             </a>
-            <a target="_blank" href="https://github.com/umesha-g" rel="noopener noreferrer">
+            <a target="_blank" href="https://github.com/umesha-g" rel="noopener noreferrer" className="hover:text-red-800 transition-colors">
               <AiFillGithub />
             </a>
           </div>
@@ -38,29 +37,27 @@ export default function Hero() {
           <div className="flex items-center justify-center md:justify-start">
             <DownloadButton />
           </div>
-        </div>
-      </AnimatedDivision>
+        </AnimatedDivision>
+      </div>
 
-      <AnimatedDivision className="container justify-self-center relative mr-10">
-        <div className="relative ">
-        <Image
-            className="absolute p-10 h-auto w-11/12 sm:w-9/12 md:w-10/12  lg:w-10/12 xl:w-9/12 2xl:w-10/12 left-1/2 transform translate-y-16 sm:translate-y-10 md:translate-y-12 lg:translate-y-1/2 xl:translate-y-24 2xl:translate-y-32 -translate-x-1/2 transition-opacity duration-500 ease-in-out delay-100 opacity-0 hover:opacity-100"
-            sizes="100vw"
+      <AnimatedDivision className="w-full md:absolute md:right-0 md:top-1/2 md:-translate-y-1/2 md:w-3/5 lg:w-1/2 h-[50vh] md:h-full xl:p-10">
+        <div className="relative w-full h-full">
+          <Image
+            className="absolute inset-0 w-full h-full object-contain transition-opacity duration-500 ease-in-out opacity-0 hover:opacity-100"
+            sizes="(max-width: 768px) 100vw, 50vw"
             quality={100}
             alt="Hero Image 2"
             src={heroImage2}
             style={{ zIndex: 1 }}
           />
-
           <Image
-            className="absolute p-10 h-auto w-11/12 sm:w-9/12 md:w-10/12  lg:w-10/12 xl:w-9/12 2xl:w-10/12 left-1/2 transform translate-y-16 sm:translate-y-10 md:translate-y-12 lg:translate-y-1/2 xl:translate-y-24 2xl:translate-y-32 -translate-x-1/2 "
-            sizes="100vw"
+            className="absolute inset-0 w-full h-full object-contain"
+            sizes="(max-width: 768px) 100vw, 50vw"
             quality={100}
             alt="Hero Image 1"
             src={heroImage1}
             style={{ zIndex: 0 }}
           />
-          
         </div>
       </AnimatedDivision>
     </div>

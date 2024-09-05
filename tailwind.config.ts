@@ -26,7 +26,6 @@ const config: Config = {
       },
 
       fontFamily: {
-
         jost:['Jost','serif'],
         righteous:['Righteous','serif'],
         orbitron : ['Orbitron','serif'],
@@ -45,7 +44,7 @@ const config: Config = {
         '4.5xl':'1.8rem',
         '4.6xl':'2rem',
         '6.5xl':'4.5rem',
-        '7xl': '6rem',
+        '7xl': '6.5rem',
       }
       
     },

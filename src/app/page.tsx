@@ -15,16 +15,11 @@ export default function Home() {
     <main className={`font-jost relative text-white bg-neutral-950 overflow-hidden` }>
     
       <GoToTopButton/>
+      <Navbar />
 
       <section id='hero_sc' className={` bg-neutral-950 overflow-hidden`}>
-        <Navbar />
-        <div className="w-full max-w-screen-lg mx-auto">
-          <div className="relative aspect-w-16 aspect-h-9">
-        <div className="">
+        
         <Hero />
-        </div>
-      </div>
-    </div>
       </section>
 
       <section id="about_sc"  className='min-h-screen bg-neutral-900 '>
