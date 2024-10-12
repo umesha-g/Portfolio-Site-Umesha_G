@@ -45,6 +45,7 @@ export default function Hero() {
           <Image
             className="absolute inset-0 w-full h-full object-contain transition-opacity duration-500 ease-in-out opacity-0 hover:opacity-100"
             sizes="(max-width: 768px) 100vw, 50vw"
+            priority
             quality={100}
             alt="Hero Image 2"
             src={heroImage2}
@@ -53,6 +54,7 @@ export default function Hero() {
           <Image
             className="absolute inset-0 w-full h-full object-contain"
             sizes="(max-width: 768px) 100vw, 50vw"
+            priority
             quality={100}
             alt="Hero Image 1"
             src={heroImage1}
