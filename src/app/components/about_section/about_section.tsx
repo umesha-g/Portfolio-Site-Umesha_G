@@ -32,7 +32,7 @@ export default function About_Section(): JSX.Element {
               </div>
               <div className='flex flex-col pla place-items-center'>
                 <h5 className='text-neutral-400 text-sm 2xl:text-base mb-2 leading-6'>Software <br/>Developments</h5>
-                <span className='flex'><Numberload Number={4}/><h1 className='ml-2 hidden text-xl lg:text-2xl xl:text-3xl text-red-1 font-bold'>+</h1></span>
+                <span className='flex'><Numberload Number={5}/><h1 className='ml-2 hidden text-xl lg:text-2xl xl:text-3xl text-red-1 font-bold'>+</h1></span>
               </div>
             </div>
 
