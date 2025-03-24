@@ -15,7 +15,7 @@ export const projects_list: Project[] = [
     title: 'The Clique',
     description: 'The Clique is a modern e-commerce platform built with Next.js, Spring Boot, and MySQL to showcase full-stack development skills. Featuring user-friendly shopping experiences, admin management tools, and an elegant design with ShadCN components, it highlights innovation and attention to detail',
     image: CliqueImage,
-    projectUrl: ['block','http://34.41.111.151/'],
+    projectUrl: ['hidden','http://34.41.111.151/'],
     githubUrl: 'https://github.com/umesha-g/The-Clique-EcomSite'
   },
   {
