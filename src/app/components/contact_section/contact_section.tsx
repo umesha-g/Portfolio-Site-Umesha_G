@@ -27,7 +27,7 @@ export default function Contact_Section(): JSX.Element {
                         </ul>
                     </div>
                     <hr className="mt-4 border-gray-200 sm:mx-auto lg:my-8" />
-                    <span className="my-3 lg:mt-0 block text-sssm md:text-sm  text-center">Designed By Umesha G. © 2024. All Rights Reserved.</span>
+                    <span className="my-3 lg:mt-0 block text-sssm md:text-sm  text-center">Designed By Umesha G. © 2025. All Rights Reserved.</span>
                 </AnimatedDivision>
             </footer>
 
